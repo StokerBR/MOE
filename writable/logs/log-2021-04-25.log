@@ -1,0 +1,469 @@
+CRITICAL - 2021-04-25 03:39:52 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:42:39 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:42:41 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:42:42 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:43:36 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:43:38 --> aaaa
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-04-25 03:43:48 --> Error connecting to the database: Access denied for user ''@'localhost' (using password: NO)
+CRITICAL - 2021-04-25 03:43:48 --> Unable to connect to the database.
+#0 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(618): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#2 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-04-25 03:45:12 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-25 03:45:12 --> Duplicate entry '0' for key 'PRIMARY'
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(21): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#7 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-04-25 03:46:11 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::insert() must be of the type array or null, string given, called in D:\xampp\htdocs\MOE\app\Controllers\HomeController.php on line 21
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(21): CodeIgniter\Database\BaseBuilder->insert('pessoas', Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 03:47:09 --> Undefined property: App\Controllers\HomeController::$db
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 21, Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 03:48:06 --> Call to undefined method App\Models\User::insert_id
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\Model->__call('insert_id', Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 03:48:31 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert_id()
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-25 03:51:47 --> Call to undefined method CodeIgniter\Database\MySQLi\Connection::insert()
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): App\Models\User->add_table(Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 03:54:13 --> Trying to get property 'insert_id' of non-object
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(665): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', 'D:\\xampp\\htdocs...', 665, Array)
+#1 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\Database\MySQLi\Connection->insertID()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-04-25 03:54:48 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 03:54:48 --> Duplicate entry '0' for key 'PRIMARY'
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-04-25 03:55:03 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 03:55:03 --> Duplicate entry '0' for key 'PRIMARY'
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-04-25 03:55:44 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 03:55:44 --> Duplicate entry '0' for key 'PRIMARY'
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2021-04-25 03:55:53 --> mysqli_sql_exception: Duplicate entry '0' for key 'PRIMARY' in D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 03:55:53 --> Duplicate entry '0' for key 'PRIMARY'
+#0 D:\xampp\htdocs\MOE\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO `pe...')
+#1 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 D:\xampp\htdocs\MOE\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 D:\xampp\htdocs\MOE\system\Database\BaseBuilder.php(2263): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 D:\xampp\htdocs\MOE\system\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\MOE\system\BaseModel.php(758): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\MOE\system\Model.php(705): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\MOE\system\BaseModel.php(667): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(23): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 17:07:05 --> syntax error, unexpected '}', expecting ',' or ';'
+#0 D:\xampp\htdocs\MOE\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\MOE\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-25 22:00:25 --> syntax error, unexpected '}', expecting ',' or ';'
+#0 D:\xampp\htdocs\MOE\system\Autoloader\Autoloader.php(265): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs...')
+#1 D:\xampp\htdocs\MOE\system\Autoloader\Autoloader.php(228): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(893): class_exists('\\App\\Controller...', true)
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(417): CodeIgniter\CodeIgniter->startController()
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-25 22:00:29 --> Undefined property: App\Controllers\HomeController::$uri
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 25, Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->registrar()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 22:00:41 --> Undefined property: App\Controllers\HomeController::$uri
+#0 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(25): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 25, Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->registrar()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-04-25 22:08:02 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:08:06 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:08:28 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:50 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:51 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:51 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:51 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:51 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:52 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:53 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:55 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:55 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:55 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:56 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:57 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:09:57 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:10:59 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:12 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:13 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:13 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:14 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:14 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:14 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:14 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:14 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:15 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:15 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:15 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:15 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:15 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:16 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:20 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:20 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:20 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:21 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:24 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:54 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:12:55 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:09 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:10 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:10 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:10 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:10 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:13:28 --> Call to undefined function ativo()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\View\View.php(468): CodeIgniter\View\View->render('partials/navbar...', NULL, true)
+#3 D:\xampp\htdocs\MOE\app\Views\layouts\main.php(20): CodeIgniter\View\View->include('partials/navbar...')
+#4 D:\xampp\htdocs\MOE\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 D:\xampp\htdocs\MOE\system\View\View.php(236): CodeIgniter\View\View->render('layouts/main', Array, true)
+#7 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/registrar', Array, true)
+#8 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(25): view('home/registrar')
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->registrar()
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#11 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2021-04-25 22:13:51 --> syntax error, unexpected 'ativo' (T_STRING), expecting '('
+#0 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(468): CodeIgniter\View\View->render('partials/navbar...', NULL, true)
+#2 D:\xampp\htdocs\MOE\app\Views\layouts\main.php(20): CodeIgniter\View\View->include('partials/navbar...')
+#3 D:\xampp\htdocs\MOE\system\View\View.php(220): include('D:\\xampp\\htdocs...')
+#4 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 D:\xampp\htdocs\MOE\system\View\View.php(236): CodeIgniter\View\View->render('layouts/main', Array, true)
+#6 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/registrar', Array, true)
+#7 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(25): view('home/registrar')
+#8 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->registrar()
+#9 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#10 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2021-04-25 22:13:58 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:14:40 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:16:37 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:16:38 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:16:38 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:19:43 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:19:44 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:19:44 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-25 22:19:44 --> Cannot redeclare ativo() (previously declared in D:\xampp\htdocs\MOE\app\Views\partials\navbar-menu.php:3)
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

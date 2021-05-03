@@ -1,0 +1,12 @@
+CRITICAL - 2021-04-30 05:07:11 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(224): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(172): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\MOE\system\bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\MOE\public\index.php(35): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2021-04-30 05:07:41 --> The framework needs the following extension(s) installed and loaded: {0}.
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(224): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(172): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\MOE\system\bootstrap.php(159): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\MOE\public\index.php(35): require('D:\\xampp\\htdocs...')
+#4 {main}

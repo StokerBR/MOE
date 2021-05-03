@@ -1,0 +1,200 @@
+$cor-primaria: #005ca1;
+$cor-secundaria: #5a5a5a;
+$cor-texto-claro: #9e9e9e;
+
+//navbar
+nav {
+
+    background-color: $cor-primaria;
+    
+    .nav-wrapper {
+        padding: 0 20px;
+    }
+
+}
+
+.page {
+
+    padding: 0 20px;
+
+}
+
+//botões
+.btn {
+
+    &.btn-primario {
+        background-color: $cor-primaria;
+    }
+
+    &.btn-secundario {
+        background-color: $cor-secundaria;
+    }
+
+}
+
+//small
+small {
+    color: $cor-texto-claro !important;
+}
+
+//cor inputs materialize
+.input-field input:focus + label {
+    color: $cor-primaria !important;
+}
+.input-field input:focus {
+    border-bottom: 1px solid $cor-primaria !important;
+    box-shadow: 0 1px 0 0 $cor-primaria !important;
+}
+.input-field .prefix.active {
+    color: $cor-primaria;
+}
+.input-field textarea:focus {
+    border-bottom: 1px solid $cor-primaria !important;
+    box-shadow: 0 1px 0 0 $cor-primaria !important;
+}
+
+//cor ratios
+[type="radio"]:checked+span:after {
+    background-color: $cor-primaria;
+    border: 2px solid $cor-primaria;
+}
+
+//título secundário de card
+.card .card-title.secondary {
+    font-size: 20px;
+}
+
+//asterisco de campo obrigatório
+span.required {
+    color: red;
+}
+
+//classe de display none
+.d-none {
+    display: none;
+}
+
+//erros de validação do parsley
+.parsley-errors-list {
+
+    margin-top: 0;
+
+    color: red;
+    font-size: small;
+
+}
+.input-field .prefix ~ .parsley-errors-list {
+    margin-left: 40px;
+}
+
+.parsley-error {
+    border-bottom: 1px solid #ff0000 !important;
+    box-shadow: 0 1px 0 0 #ff0000 !important;
+}
+
+//alerts
+.materialert {
+
+    opacity: 0;
+    position: relative;
+    min-width: 150px;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.1s linear;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+
+    .material-icons {
+        margin-right: 10px;
+    }
+
+    .close-alert {
+        border: 0;
+        cursor: pointer;
+        color: inherit;
+        background: 0 0;
+        font-size: 22px;
+        line-height: 1;
+        font-weight: bold;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
+        filter: opacity(50);
+        // margin-bottom: -5px;
+        position: absolute;
+        // top: 12px;
+        right: 10px;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+    &.info {
+        background-color: #039be5;
+        color: #fff;
+    }
+
+    &.success {
+        background-color: #43a047;
+        color: #fff;
+    }
+
+    &.error {
+        background-color: #c62828;
+        color: #fff;
+    }
+
+    &.danger {
+        background-color: #c62828;
+        color: #fff;
+    }
+
+    &.warning {
+        background-color: #fbc02d;
+        color: #fff;
+    }
+
+}
+
+/*
+ * Página de registro de usuario
+ */
+.page-registrar{
+
+    .card-wrapper {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .row {
+        margin-bottom: 0;
+    }
+
+    .card-title {
+        padding-bottom: 20px;
+    }
+
+    .descricao-senha {
+        margin-left: 45px;
+    }
+
+    .tipo-conta {
+        margin: 30px 0;
+    }
+
+    .estagiario {
+        margin-top: 44px;
+    }
+
+    @media (max-width: 600px) {
+        .senha-confirm {
+            width: calc(100% - 40px) !important;
+            margin-left: 40px !important;
+        }
+    }
+
+}

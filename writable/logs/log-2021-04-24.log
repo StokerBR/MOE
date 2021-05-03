@@ -1,0 +1,620 @@
+CRITICAL - 2021-04-24 23:44:01 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:44:01 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:44 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:44 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:45 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:46:50 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:46:50 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:05 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:05 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:06 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:06 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:06 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:06 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:11 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:17 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:18 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:18 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:18 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:18 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:54 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:54 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:55 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:55 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:51:55 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:51:55 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:52:52 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:52:52 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(9): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:52:53 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:54:23 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(10): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:54:23 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:54:24 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(10): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:54:24 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:54:24 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(10): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:54:24 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:54:48 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(10): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:54:48 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-04-24 23:55:35 --> Call to undefined method CodeIgniter\View\View::extends()
+#0 D:\xampp\htdocs\MOE\system\View\View.php(220): include()
+#1 D:\xampp\htdocs\MOE\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\MOE\system\Common.php(1217): CodeIgniter\View\View->render('home/index', Array, true)
+#3 D:\xampp\htdocs\MOE\app\Controllers\HomeController.php(10): view('home/index')
+#4 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\HomeController->index()
+#5 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#6 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-04-24 23:55:35 --> Uncaught ErrorException: include(): Filename cannot be empty in D:\xampp\htdocs\MOE\system\Debug\Exceptions.php:281
+Stack trace:
+#0 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', 'D:\\xampp\\htdocs...', 281, Array)
+#1 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(281): include()
+#2 D:\xampp\htdocs\MOE\system\Debug\Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

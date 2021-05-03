@@ -1,0 +1,13 @@
+CRITICAL - 2021-04-29 22:57:48 --> Call to a member function all() on array
+#0 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\UsuarioController->registrar()
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-04-29 23:00:07 --> Object of class CodeIgniter\HTTP\IncomingRequest could not be converted to string
+#0 D:\xampp\htdocs\MOE\app\Controllers\UsuarioController.php(15): CodeIgniter\Debug\Exceptions->errorHandler(4096, 'Object of class...', 'D:\\xampp\\htdocs...', 15, Array)
+#1 D:\xampp\htdocs\MOE\system\CodeIgniter.php(936): App\Controllers\UsuarioController->registrar()
+#2 D:\xampp\htdocs\MOE\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+#3 D:\xampp\htdocs\MOE\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\MOE\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
