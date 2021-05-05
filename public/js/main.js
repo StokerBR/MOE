@@ -4,6 +4,12 @@ $(function() {
     var elems = document.querySelectorAll('.sidenav');
     M.Sidenav.init(elems, {edge: 'right'});
 
+    //dropdown navbar
+    $(".dropdown-trigger").dropdown({
+        coverTrigger: false,
+        // hover: true,
+    });
+
     //alert
     $('.materialert').each(function() {
 

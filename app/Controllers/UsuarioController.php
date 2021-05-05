@@ -9,10 +9,103 @@ use App\Models\Usuario;
 
 class UsuarioController extends BaseController {
 
-	public function index() {
-		
+	/**
+	 * Retorna o formulário de login
+	 */
+	public function loginForm() {
+
+		return view('usuario/login');
+
 	}
 
+	/**
+	 * Salva o usuário na sessão (faz o login)
+	 */
+	private function setUsuario($usuario) {
+
+		$data = [
+			'id' => $usuario['id'],
+			'email' => $usuario['email'],
+			'tipo' => $usuario['tipo'],
+			'logado' => true
+		];
+
+		session()->set($data);
+
+	}
+
+	/**
+	 * Valida os dados e realiza o login do usuário
+	 */
+	public function login() {
+
+		$request = service('request');
+
+		$regras = [
+			'email' => 'required|valid_email|max_length[50]',
+			'senha' => 'required|min_length[6]|max_length[50]',
+		];
+
+		if ($this->validate($regras)) {
+
+			$modelUsuario = new Usuario();
+
+			$usuario = $modelUsuario->where('email', $request->getVar('email'))->first(); //procura usuário por email
+
+			if ($usuario) { //se encontrou o usuário
+
+				if (password_verify($request->getVar('senha'), $usuario['senha'])) { //verifica se a senha está correta
+
+					$this->setUsuario($usuario); //realiza o login
+
+					if ($usuario['tipo'] == 'estagiario') {
+
+						return redirect('estagiario')->with('success', 'Logado com sucesso!');
+
+					} else {
+
+						return redirect('empregador')->with('success', 'Logado com sucesso!');
+
+					}
+
+				}
+				
+			}
+
+			return redirect()->back()->withInput()->with('errors', 'Email e/ou senha incorretos'); //retorna ao formulário de login
+
+
+		} else { //se a validação falhar
+
+			return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+
+		}
+
+	}
+
+	/**
+	 * Realiza o logout do usuário
+	 */
+	public function logout() {
+
+		session()->destroy();
+
+		return redirect('/')->with('success', 'Deslogado');
+
+	}
+
+	/**
+	 * Retorna o formulário de registro de usuário
+	 */
+	public function registrarForm() {
+
+		return view('usuario/registrar');
+
+	}
+
+	/**
+	 * Registra o usuário
+	 */
 	public function registrar() {
 		
 		$request = service('request');
@@ -75,14 +168,14 @@ class UsuarioController extends BaseController {
 
 			$modelUsuario->save($usuario);
 
-			$idUsuario = $modelUsuario->db->insertID();
+			$usuario['id'] = $modelUsuario->db->insertID();
 
 			//estagiario
 			if ($request->getVar('tipo_conta') == 'estagiario') {
 
 				$modelEstagiario = new Estagiario();
 
-				$estagiario['id_usuario'] = $idUsuario;
+				$estagiario['id_usuario'] = $usuario['id'];
 				$estagiario['nome'] = $request->getVar('nome');
 				$estagiario['curso'] = $request->getVar('curso');
 				$estagiario['ano_ingresso'] = $request->getVar('ano_ingresso');
@@ -94,7 +187,7 @@ class UsuarioController extends BaseController {
 
 				$modelEmpregador = new Empregador();
 
-				$empregador['id_usuario'] = $idUsuario;
+				$empregador['id_usuario'] = $usuario['id'];
 				$empregador['nome_empresa'] = $request->getVar('nome_empresa');
 				$empregador['pessoa_contato'] = $request->getVar('pessoa_contato');
 				$empregador['endereco_empresa'] = $request->getVar('endereco_empresa');
@@ -106,13 +199,32 @@ class UsuarioController extends BaseController {
 
 			$db->transComplete(); //finaliza a transação
 
-			if ($db->transStatus() == false) {
+			if ($db->transStatus() == false) { //se a transação falhar
 
 				return redirect()->back()->withInput()->with('warning', 'Não foi possível salvar os dados. Tente novamente mais tarde.');
 
-			} else {
+			} else { //se a transação for completada com sucesso
 
-				return redirect('dashboard')->with('success', 'Registrado com sucesso!');
+				//faz o login
+				$this->setUsuario($usuario); 
+
+				//envia o email confirmando a criação da conta
+				$email = service('email');
+				$email->setTo($usuario['email']);
+				$email->setSubject('Criação de conta');
+				$email->setMessage('Sua conta no MOE foi criada com sucesso');
+				$email->send();
+
+				if ($usuario['tipo'] == 'estagiario') {
+
+					return redirect('estagiario')->with('success', 'Conta criada com sucesso!');
+
+				} else {
+
+					return redirect('empregador')->with('success', 'Conta criada com sucesso!');
+
+				}
+
 
 			}
 			

@@ -2,11 +2,11 @@
 
 <?= $this->section('page') ?>
 
-    <div class="page-dashboard">
+    <div class="page-empregador">
 
         <?= $this->include('partials/alerts') ?>
 
-        <h2>Dashboard</h2>
+        <h2>Dashboard Empregador</h2>
 
     </div>
     

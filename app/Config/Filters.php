@@ -2,6 +2,10 @@
 
 namespace Config;
 
+use App\Filters\Auth;
+use App\Filters\AuthEmpregador;
+use App\Filters\AuthEstagiario;
+use App\Filters\NoAuth;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
@@ -19,6 +23,10 @@ class Filters extends BaseConfig
 		'csrf'     => CSRF::class,
 		'toolbar'  => DebugToolbar::class,
 		'honeypot' => Honeypot::class,
+		'Auth' => Auth::class,
+		'NoAuth' => NoAuth::class,
+		'AuthEstagiario' => AuthEstagiario::class,
+		'AuthEmpregador' => AuthEmpregador::class
 	];
 
 	/**

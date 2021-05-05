@@ -14,10 +14,12 @@
                         <div class="card-content black-text">
                             <span class="card-title">Criar conta</span>
 
-                            <div class="input-field">
-                                <i class="material-icons prefix">email</i>
-                                <label for="email">E-mail <span class="required">*</span></label>
-                                <input id="email" type="email" name="email" placeholder="E-mail" maxlength="50" value="<?= old('email') ?>" required>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <label for="email">E-mail <span class="required">*</span></label>
+                                    <input id="email" type="email" name="email" placeholder="E-mail" maxlength="50" value="<?= old('email') ?>" required>
+                                </div>
                             </div>
 
                             <div class="row">
@@ -61,10 +63,12 @@
 
                             <div class="estagiario">
 
-                                <div class="input-field">
-                                    <i class="material-icons prefix">person</i>
-                                    <label for="nome">Nome <span class="required">*</span></label>
-                                    <input id="nome" type="text" name="nome" placeholder="Nome" maxlength="50" value="<?= old('nome') ?>" required>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">person</i>
+                                        <label for="nome">Nome <span class="required">*</span></label>
+                                        <input id="nome" type="text" name="nome" placeholder="Nome" maxlength="50" value="<?= old('nome') ?>" required>
+                                    </div>
                                 </div>
 
                                 <div class="row">
@@ -112,10 +116,12 @@
 
                                 </div>
 
-                                <div class="input-field">
-                                    <i class="material-icons prefix">maps_home_work</i>
-                                    <label for="endereco_empresa">Endereço da Empresa <span class="required">*</span></label>
-                                    <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço"  maxlength="150" value="<?= old('endereco_empresa') ?>" required>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <i class="material-icons prefix">maps_home_work</i>
+                                        <label for="endereco_empresa">Endereço da Empresa <span class="required">*</span></label>
+                                        <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço"  maxlength="150" value="<?= old('endereco_empresa') ?>" required>
+                                    </div>
                                 </div>
 
                                 <div class="row">

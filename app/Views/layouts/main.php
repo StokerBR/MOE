@@ -20,6 +20,16 @@
 <body>
 
     <div class="navbar-fixed">
+        <?php if (session()->get('logado')): ?>
+            <ul id="dropdown-perfil" class="dropdown-content">
+                <li <?= ativo('perfil') ?> ><a href="perfil">Perfil</a></li>
+                <li><a href="logout">Sair</a></li>
+            </ul>
+            <ul id="dropdown-perfil" class="dropdown-content">
+                <li <?= ativo('perfil') ?> ><a href="perfil">Perfil</a></li>
+                <li><a href="logout">Sair</a></li>
+            </ul>
+        <?php endif; ?>
         <nav>
             <div class="nav-wrapper">
                 <a href="" class="brand-logo">MOE</a>

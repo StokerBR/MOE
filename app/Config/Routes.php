@@ -32,12 +32,39 @@ $routes->setAutoRoute(false);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+//home
 $routes->get('/', 'HomeController::index');
 
-$routes->get('registrar', 'HomeController::registrar');
-$routes->post('registrar', 'UsuarioController::registrar');
+//logout
+$routes->get('logout', 'UsuarioController::logout', ['filter' => 'Auth']);
 
-$routes->get('dashboard', 'DashboardController::index');
+$routes->group('', ['filter' => 'NoAuth'], function($routes) {
+
+	//registrar
+	$routes->get('registrar', 'UsuarioController::registrarForm');
+	$routes->post('registrar', 'UsuarioController::registrar');
+	
+	//login
+	$routes->get('login', 'UsuarioController::loginForm');
+	$routes->post('login', 'UsuarioController::login');
+	
+});
+
+//estagiário
+$routes->group('estagiario', ['filter' => 'AuthEstagiario'], function($routes) {
+
+	$routes->get('/', 'EstagiarioController::index');
+
+});
+
+//empregador
+$routes->group('empregador', ['filter' => 'AuthEmpregador'], function($routes) {
+
+	$routes->get('/', 'EmpregadorController::index');
+
+});
+
 
 /*
  * --------------------------------------------------------------------
