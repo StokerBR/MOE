@@ -20,12 +20,21 @@ nav .dropdown-content li > a {
 .page {
   padding: 0 20px;
 }
+.page .page-wrapper {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-top: 50px;
+}
 
 .btn.btn-primario {
   background-color: #005ca1;
 }
 .btn.btn-secundario {
   background-color: #5a5a5a;
+}
+.btn.btn-secundario {
+  background-color: #c62828;
 }
 
 small {
@@ -53,6 +62,10 @@ small {
 [type=radio]:checked + span:after {
   background-color: #005ca1;
   border: 2px solid #005ca1;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  color: #005ca1;
 }
 
 .card-wrapper {
@@ -161,6 +174,11 @@ span.required {
     width: calc(100% - 40px) !important;
     margin-left: 40px !important;
   }
+}
+
+.page-vagas .vagas-title {
+  display: flex;
+  align-items: baseline;
 }
 
 /*# sourceMappingURL=main.css.map */

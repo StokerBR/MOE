@@ -36,11 +36,9 @@ $routes->setAutoRoute(false);
 //home
 $routes->get('/', 'HomeController::index');
 
-//logout
-$routes->get('logout', 'UsuarioController::logout', ['filter' => 'Auth']);
-
+//não autenticado
 $routes->group('', ['filter' => 'NoAuth'], function($routes) {
-
+	
 	//registrar
 	$routes->get('registrar', 'UsuarioController::registrarForm');
 	$routes->post('registrar', 'UsuarioController::registrar');
@@ -48,7 +46,15 @@ $routes->group('', ['filter' => 'NoAuth'], function($routes) {
 	//login
 	$routes->get('login', 'UsuarioController::loginForm');
 	$routes->post('login', 'UsuarioController::login');
-	
+
+});
+
+//autenticado
+$routes->group('', ['filter' => 'Auth'], function($routes) {
+
+	//logout
+	$routes->get('logout', 'UsuarioController::logout');
+
 });
 
 //estagiário
@@ -62,6 +68,13 @@ $routes->group('estagiario', ['filter' => 'AuthEstagiario'], function($routes) {
 $routes->group('empregador', ['filter' => 'AuthEmpregador'], function($routes) {
 
 	$routes->get('/', 'EmpregadorController::index');
+
+	$routes->get('vagas', 'VagasController::index');
+	$routes->get('vagas/cadastrar', 'VagasController::cadastrar');
+	$routes->post('vagas', 'VagasController::inserir');
+	$routes->get('vagas/(:num)/editar', 'VagasController::editar');
+	$routes->put('vagas', 'VagasController::atualizar');
+	$routes->delete('vagas/(:num)', 'VagasController::atualizar');
 
 });
 

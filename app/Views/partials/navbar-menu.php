@@ -15,7 +15,7 @@
     <?php else: ?>
 
         <li <?= ativo('empregador') ?> ><a href="empregador">Dashboard</a></li>
-        <li <?= ativo('empregador/oportunidades') ?> ><a href="empregador/oportunidades">Oportunidades de Estágio</a></li>
+        <li <?= ativo('empregador/vagas') ?> ><a href="empregador/vagas">Vagas de Estágio</a></li>
         <li <?= ativo('empregador/estagiarios') ?> ><a href="empregador/estagiarios">Estagiários</a></li>
 
     <?php endif; ?>

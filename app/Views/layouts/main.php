@@ -2,8 +2,8 @@
 
     function ativo($uri) {
         return uri_string() == $uri ? 'class="active"' : '';
-    } 
-
+    }
+    
 ?>
 
 <!DOCTYPE html>

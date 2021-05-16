@@ -33,6 +33,16 @@ nav {
 
     padding: 0 20px;
 
+    .page-wrapper {
+
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        margin-top: 50px;
+
+    }
+
 }
 
 //botões
@@ -44,6 +54,10 @@ nav {
 
     &.btn-secundario {
         background-color: $cor-secundaria;
+    }
+
+    &.btn-secundario {
+        background-color: #c62828;
     }
 
 }
@@ -73,6 +87,11 @@ small {
 [type="radio"]:checked+span:after {
     background-color: $cor-primaria;
     border: 2px solid $cor-primaria;
+}
+
+//cor selects
+.dropdown-content li>a, .dropdown-content li>span {
+    color: $cor-primaria;
 }
 
 //card
@@ -216,6 +235,17 @@ span.required {
             width: calc(100% - 40px) !important;
             margin-left: 40px !important;
         }
+    }
+
+}
+
+.page-vagas {
+
+    .vagas-title {
+
+        display: flex;
+        align-items: baseline;
+
     }
 
 }

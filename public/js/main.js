@@ -10,6 +10,8 @@ $(function() {
         // hover: true,
     });
 
+    $('select').formSelect();
+
     //alert
     $('.materialert').each(function() {
 
