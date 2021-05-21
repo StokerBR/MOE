@@ -33,7 +33,7 @@ nav .dropdown-content li > a {
 .btn.btn-secundario {
   background-color: #5a5a5a;
 }
-.btn.btn-secundario {
+.btn.btn-apagar {
   background-color: #c62828;
 }
 
@@ -176,6 +176,9 @@ span.required {
   }
 }
 
+/*
+ * Página de vagas
+ */
 .page-vagas .vagas-title {
   display: flex;
   align-items: baseline;

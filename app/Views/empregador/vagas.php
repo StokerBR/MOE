@@ -30,7 +30,7 @@
                     </div>
                 </div>
 
-                <table class="striped">
+                <table class="striped centered">
                     <thead>
                         <tr>
                             <th>ID</th>
@@ -52,7 +52,7 @@
                                     <td><?= $vaga['remuneracao'] ?> R$</td>
                                     <td>
                                         <a class="btn btn-primario" title="Editar" href=""><i class="material-icons">edit</i></a>
-                                        <a class="btn btn-secundario" title="Deletar" href=""><i class="material-icons">delete</i></a>
+                                        <a class="btn btn-apagar" title="Deletar" href=""><i class="material-icons">delete</i></a>
                                     </td>
                                 </tr>
 

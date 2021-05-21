@@ -3,6 +3,10 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\Empregador;
+use App\Models\Estagiario;
+use App\Models\InteresseEmpresa;
+use App\Models\Usuario;
 use App\Models\Vaga;
 
 class VagasController extends BaseController {
@@ -53,7 +57,7 @@ class VagasController extends BaseController {
 	public function index() {
 
 		$modelVaga = new Vaga();
-
+		
 		$vagas = $modelVaga->where('id_empregador', session()->get('id'))->findAll();
 
 		return view('empregador/vagas', ['vagas' => $vagas]);
@@ -79,6 +83,39 @@ class VagasController extends BaseController {
 		if ($this->validate($regras)) {
 
 			if ($this->salvar([])) {
+
+				$modelInteresseEmpresa = new InteresseEmpresa();
+				$modelEmpresa = new Empregador();
+				$modelEstagiario = new Estagiario();
+				$modelUsuario = new Usuario();
+
+				$email = service('email');
+
+				$interesses = $modelInteresseEmpresa->where('id_empregador', session()->get('id'))->findAll();
+
+				//enviar email aos estagiarios interessados nas vagas da empresa
+				if (count($interesses) > 0) {
+
+					foreach ($interesses as $interesse) {
+
+						$estagiario = $modelEstagiario->where('id_usuario', $interesse['id_estagiario'])->first();
+
+						if ($estagiario) {
+
+							$empresa = $modelEmpresa->find(session()->get('id'));
+
+							$usuario = $modelUsuario->find($estagiario['id_usuario']);
+
+							$email->setTo($usuario['email']);
+							$email->setSubject('Nova Vaga');
+							$email->setMessage('A empresa ' . $empresa['nome_empresa'] . ' cadastrou uma nova vaga!');
+							$email->send();
+
+						}
+
+					}
+
+				}
 
 				return redirect('empregador/vagas')->with('success', 'Vaga criada com sucesso!');
 

@@ -9,10 +9,6 @@ class Empregadores extends Migration
 	public function up()
 	{
 		$this->forge->addField([
-			'id' => [
-				'type' => 'INT',
-				'auto_increment' => true
-			],
 			'id_usuario' => [
 				'type' => 'INT'
 			],
@@ -35,7 +31,7 @@ class Empregadores extends Migration
 
 		$this->forge->addField('CONSTRAINT FOREIGN KEY (id_usuario) REFERENCES usuarios(id)');
 
-		$this->forge->addKey('id', true);
+		$this->forge->addKey('id_usuario', true);
 
 		$this->forge->createTable('empregadores');
 

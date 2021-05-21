@@ -10,13 +10,11 @@ $(function() {
         // hover: true,
     });
 
+    //selects
     $('select').formSelect();
 
     //alert
-    $('.materialert').each(function() {
-
-        let $alert = $(this);
-
+    function alert($alert) {
         //mostrar o alerta
         $alert.css({top: '-50px'}).animate({opacity: 1, top: '0px'}, 'fast');
 
@@ -35,8 +33,46 @@ $(function() {
         $alert.find('.close-alert').on('click', function() {
             closeAlert();
         });
-
+    }
+    $('.materialert').each(function() {
+        alert($(this));
     });
+    function createAlert(tipo, mensagem) {
+
+        let $alert = null;
+
+        switch (tipo) {
+            case 'success':
+                $alert = $(`
+                    <div class="materialert success">
+                        <div class="material-icons">check</div>
+                        ${mensagem}
+                        <button type="button" class="close-alert">×</button>
+                    </div>
+                `);
+                break;
+            
+            case 'error':
+                $alert = $(`
+                    <div class="materialert error">
+                        <div class="material-icons">error</div>
+                        ${mensagem}
+                        <button type="button" class="close-alert">×</button>
+                    </div>
+                `);
+                break;
+        }
+
+        if ($alert) {
+
+            $('.alerts').append($alert);
+            alert($alert);
+
+        }
+
+    }
+
+    let siteUrl = $('meta[name="site_url"]').attr('content');
 
     //página de registro de usuário
     $('.page .page-registrar').each(function() {
@@ -99,6 +135,32 @@ $(function() {
 
         });
         $self.find('.tipo-conta input[name="tipo_conta"]:checked').trigger('change');
+
+    });
+
+    //página de visualização de empresas pelo estagiário
+    $('.page .page-empresas').each(function() {
+
+        $('.btn-interesse').on('click', function() {
+
+            let $btn = $(this);
+
+            let idEmpresa = $btn.attr('data-id');
+
+            $.ajax({
+                url: siteUrl + '/estagiario/empresas/cadastrar',
+                method: 'POST',
+                data: {id: idEmpresa},
+                success: function() {
+                    createAlert('success', 'Interesse cadastrado com sucesso');
+                    $btn.remove();
+                },
+                error: function(response) {
+                    createAlert('error', 'Não foi possível cadastrar interesse nessa empresa: ' + response.responseText);
+                }
+            });
+
+        });
 
     });
 
