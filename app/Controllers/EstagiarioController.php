@@ -14,8 +14,6 @@ class EstagiarioController extends BaseController {
 
 	}
 
-	
-
 	/**
 	 * Mostra todas as empresas cadastradas
 	 */
@@ -34,6 +32,9 @@ class EstagiarioController extends BaseController {
 
 	}
 
+	/**
+	 * Mostra todas as empresas em que o estagiario cadastrou interesse
+	 */
 	public function empresasInteresse() {
 
 		$db = db_connect();

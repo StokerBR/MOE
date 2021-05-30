@@ -7,7 +7,7 @@
 
     <?php if (session()->get('tipo') == 'estagiario'): ?>
 
-        <li <?= ativo('estagiario') ?> ><a href="estagiario">Dashboard</a></li>
+        <li <?= ativo('estagiario') ?> ><a href="<?= base_url('estagiario') ?>">Dashboard</a></li>
         <li <?= ativo('estagiario/oportunidades') ?> ><a href="<?= base_url('estagiario/oportunidades') ?>">Oportunidades de Estágio</a></li>
         <li <?= ativo('estagiario/empresas') ?> ><a href="<?= base_url('estagiario/empresas') ?>">Empresas</a></li>
         <li <?= ativo('estagiario/interesse') ?> ><a href="<?= base_url('estagiario/interesse') ?>">Empresas de Interesse</a></li>

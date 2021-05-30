@@ -108,6 +108,8 @@ $(function() {
                 });
                 $formEstagiario.find('textarea').attr('required', true);
                 $formEstagiario.find('textarea').removeAttr('data-parsley-excluded');
+                $formEstagiario.find('select').attr('required', true);
+                $formEstagiario.find('select').removeAttr('data-parsley-excluded');
                 
             } else if ($tipoConta == 'empregador') {
                 
@@ -123,6 +125,8 @@ $(function() {
                 });
                 $formEstagiario.find('textarea').removeAttr('required');
                 $formEstagiario.find('textarea').attr('data-parsley-excluded', true);
+                $formEstagiario.find('select').removeAttr('required');
+                $formEstagiario.find('select').attr('data-parsley-excluded', true);
                 
                 $formEmpregador.find('input').each(function() {
                     $(this).attr('required', true);
