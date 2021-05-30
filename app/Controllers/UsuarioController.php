@@ -122,7 +122,8 @@ class UsuarioController extends BaseController {
 
 			$regrasEstagiario = [
 				'nome' => 'required|string|max_length[50]',
-				'curso' => 'required|string|max_length[50]',
+				'curso' => 'required|string|regex_match[/^(es|cc|si)$/]',
+				'percentual_curso' => 'required|is_natural|greater_than_equal_to[1]|less_than_equal_to[100]',
 				'ano_ingresso' => 'required|is_natural|greater_than_equal_to[' . (date('Y') - 10) . ']|less_than_equal_to[' . date('Y') . ']',
 				'minicurriculo' => 'required|string',
 			];
@@ -155,6 +156,18 @@ class UsuarioController extends BaseController {
 		//realiza a validação
 		if ($this->validate($regras, $mensagens)) { //salva os dados do usuário se a validação tiver sucesso
 
+			if ($request->getVar('tipo_conta') == 'estagiario') {
+
+				$validadorCurso = $this->validaCurso($request);
+
+				if ($validadorCurso) {
+
+					return redirect()->back()->withInput()->with('errors', $validadorCurso);
+
+				}
+
+			}
+
 			$db = db_connect();
 			
 			$db->transStart(); //inicia a transação
@@ -178,10 +191,11 @@ class UsuarioController extends BaseController {
 				$estagiario['id_usuario'] = $usuario['id'];
 				$estagiario['nome'] = $request->getVar('nome');
 				$estagiario['curso'] = $request->getVar('curso');
+				$estagiario['percentual_curso'] = $request->getVar('percentual_curso');
 				$estagiario['ano_ingresso'] = $request->getVar('ano_ingresso');
 				$estagiario['minicurriculo'] = $request->getVar('minicurriculo');
 
-				$modelEstagiario->save($estagiario);
+				$modelEstagiario->insert($estagiario);
 
 			} else { //empregador
 
@@ -193,7 +207,7 @@ class UsuarioController extends BaseController {
 				$empregador['endereco_empresa'] = $request->getVar('endereco_empresa');
 				$empregador['descricao'] = $request->getVar('descricao');
 
-				$modelEmpregador->save($empregador);
+				$modelEmpregador->insert($empregador);
 
 			}
 
@@ -233,6 +247,40 @@ class UsuarioController extends BaseController {
 			return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
 
 		}
+
+	}
+
+	private function validaCurso($request) {
+
+		$curso = $request->getVar('curso');
+		$percentual = $request->getVar('percentual_curso');
+
+		switch ($curso) {
+
+			case 'es':
+				if ($percentual < 20 || $percentual > 80) {
+					return "Você deve ter cursado no mínimo 20% e no máximo 80% do curso de Engenharia de Software";
+				}
+				return false;
+
+			case 'cc':
+				if ($percentual < 40 || $percentual > 80) {
+					return "Você deve ter cursado no mínimo 40% e no máximo 80% do curso de Ciência da Computação";
+				}
+				return false;
+
+			case 'si':
+				if ($percentual < 20 || $percentual > 80) {
+					return "Você deve ter cursado no mínimo 20% e no máximo 80% do curso de Sistemas de Informação";
+				}
+				return false;
+				
+			default:
+				return false;
+
+		}
+
+		return false;
 
 	}
 }

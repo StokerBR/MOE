@@ -14,6 +14,8 @@ class EstagiarioController extends BaseController {
 
 	}
 
+	
+
 	/**
 	 * Mostra todas as empresas cadastradas
 	 */
@@ -79,6 +81,46 @@ class EstagiarioController extends BaseController {
 					$interesseEmpresa['id_empregador'] = $idEmpresa;
 	
 					$modelInteresseEmpresa->save($interesseEmpresa);
+	
+					return $this->response->setStatusCode(200);
+
+				}
+
+				return $this->response->setStatusCode(400)->setBody('Interesse já cadastrado');
+
+			}
+
+		}
+
+		return $this->response->setStatusCode(400)->setBody('Id inválido');
+
+	}
+
+	/**
+	 * Descadastra interesse em uma empresa
+	 */
+	public function descadastrarInteresse() {
+
+		$request = service('request');
+		$idEmpresa = $request->getVar('id');
+
+		if ($idEmpresa) {
+
+			$modelEmpresa = new Empregador();
+
+			$empregador = $modelEmpresa->find($idEmpresa);
+
+			if ($empregador) {
+
+				$modelInteresseEmpresa = new InteresseEmpresa();
+
+				$idEstagiario = session()->get('id');
+				
+				$interesseEmpresa = $modelInteresseEmpresa->where('id_estagiario', $idEstagiario)->where('id_empregador', $idEmpresa)->first();
+
+				if ($interesseEmpresa) {
+
+					$modelInteresseEmpresa->delete($interesseEmpresa['id']);
 	
 					return $this->response->setStatusCode(200);
 

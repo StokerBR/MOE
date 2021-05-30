@@ -148,7 +148,7 @@ $(function() {
             let idEmpresa = $btn.attr('data-id');
 
             $.ajax({
-                url: siteUrl + '/estagiario/empresas/cadastrar',
+                url: siteUrl + '/estagiario/interesse/cadastrar',
                 method: 'POST',
                 data: {id: idEmpresa},
                 success: function() {
@@ -157,6 +157,41 @@ $(function() {
                 },
                 error: function(response) {
                     createAlert('error', 'Não foi possível cadastrar interesse nessa empresa: ' + response.responseText);
+                }
+            });
+
+        });
+
+    });
+
+    //página de visualização de empresas de interesse pelo estagiário
+    $('.page .page-empresasInteresse').each(function() {
+
+        $('.btn-interesse').on('click', function() {
+
+            let $btn = $(this);
+            let $tBody = $btn.closest('tbody');
+            let $trs = $tBody.find('tr');
+
+            let idEmpresa = $btn.attr('data-id');
+
+            $.ajax({
+                url: siteUrl + '/estagiario/interesse/descadastrar',
+                method: 'POST',
+                data: {id: idEmpresa},
+                success: function() {
+
+                    createAlert('success', 'Interesse descadastrado com sucesso');
+
+                    if ($trs.length == 1) {
+                        $tBody.append(`<tr><td class="center-align" colspan="3">Nenhuma Empresa encontrada</td></tr>`);
+                    }
+
+                    $btn.closest('tr').remove();
+
+                },
+                error: function(response) {
+                    createAlert('error', 'Não foi possível descadastrar interesse nessa empresa: ' + response.responseText);
                 }
             });
 

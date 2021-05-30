@@ -8,5 +8,5 @@ class Estagiario extends Model
 {
 	protected $table                = 'estagiarios';
 	protected $primaryKey           = 'id_usuario';
-	protected $allowedFields        = ['id_usuario', 'nome', 'curso', 'ano_ingresso', 'minicurriculo'];
+	protected $allowedFields        = ['id_usuario', 'nome', 'curso', 'percentual_curso', 'ano_ingresso', 'minicurriculo'];
 }

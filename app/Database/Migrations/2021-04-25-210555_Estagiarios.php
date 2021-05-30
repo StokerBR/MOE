@@ -17,8 +17,11 @@ class Estagiarios extends Migration
 				'constraint' => '50'
 			],
 			'curso' => [
-				'type' => 'VARCHAR',
-				'constraint' => '50'
+				'type' => 'ENUM',
+				'constraint' => array('es', 'cc', 'si')
+			],
+			'percentual_curso' => [
+				'type' => 'INT'
 			],
 			'ano_ingresso' => [
 				'type' => 'INT'

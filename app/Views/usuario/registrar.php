@@ -64,20 +64,34 @@
                             <div class="estagiario">
 
                                 <div class="row">
-                                    <div class="input-field col s12">
+
+                                    <div class="input-field col m6 s12">
                                         <i class="material-icons prefix">person</i>
                                         <label for="nome">Nome <span class="required">*</span></label>
                                         <input id="nome" type="text" name="nome" placeholder="Nome" maxlength="50" value="<?= old('nome') ?>" required>
                                     </div>
+
+                                    <div class="input-field col m6 s12">
+                                        <i class="material-icons prefix">school</i>
+                                        <select id="curso" name="curso" required>
+                                            <option value="">Selecione</option>
+                                            <option value="es" <?= old('curso') == 'es' ? 'selected' : '' ?>>Engenharia de Software</option>
+                                            <option value="cc"<?= old('curso') == 'cc' ? 'selected' : '' ?>>Ciência da Computação</option>
+                                            <option value="si"<?= old('curso') == 'si' ? 'selected' : '' ?>>Sistemas de Informação</option>
+                                        </select>
+                                        <label for="curso">Curso <span class="required">*</span></label>
+                                    </div>
+
                                 </div>
 
                                 <div class="row">
-                                
+
                                     <div class="input-field col s12 m6">
-                                        <i class="material-icons prefix">school</i>
-                                        <label for="curso">Nome do Curso <span class="required">*</span></label>
-                                        <input id="curso" type="text" name="curso" placeholder="Curso" maxlength="50" value="<?= old('curso') ?>" required>
+                                        <i class="material-icons prefix">data_usage</i>
+                                        <label for="percentual_curso">Percentual Cursado do Curso <span class="required">*</span></label>
+                                        <input id="percentual_curso" type="number" name="percentual_curso" placeholder="%" min="20" max="80" value="<?= old('percentual_curso') ?>" required>
                                     </div>
+
                                     <div class="input-field col s12 m6">
                                         <i class="material-icons prefix">calendar_today</i>
                                         <label for="ano_ingresso">Ano de Ingresso <span class="required">*</span></label>

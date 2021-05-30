@@ -62,8 +62,9 @@ $routes->group('estagiario', ['filter' => 'AuthEstagiario'], function($routes) {
 
 	$routes->get('/', 'EstagiarioController::index');
 
+	$routes->get('oportunidades', 'EstagiarioController::oportunidades');
 	$routes->get('empresas', 'EstagiarioController::empresas');
-	$routes->post('empresas/cadastrar', 'EstagiarioController::cadastrarInteresse');
+	$routes->post('interesse/cadastrar', 'EstagiarioController::cadastrarInteresse');
 	$routes->get('interesse', 'EstagiarioController::empresasInteresse');
 	$routes->post('interesse/descadastrar', 'EstagiarioController::descadastrarInteresse');
 
