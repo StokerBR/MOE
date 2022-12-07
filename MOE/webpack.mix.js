@@ -11,12 +11,14 @@ const mix = require('laravel-mix');
 |
 */
 
-mix.browserSync('http://localhost:8000/');
+// mix.browserSync('http://localhost:8000/');
 mix.disableNotifications();
 
-mix.scripts(['resources/assets/js/**/*.js'], 'public/js/app.js').version();
+mix.scripts(['resources/assets/js/**/*.js'], 'public/assets/js/app.js').version();
 
-mix.sass('resources/assets/scss/app.scss', 'public/css/app.css').version();
+mix.sass('resources/assets/scss/app.scss', 'public/assets/css/app.css').options({
+    processCssUrls: false
+}).version();
 
 let vendorJsFiles = [
     'node_modules/jquery/dist/jquery.min.js',
@@ -27,5 +29,8 @@ let vendorCssFiles = [
     'node_modules/bootstrap/dist/css/bootstrap.min.css'
 ];
 
-mix.scripts(vendorJsFiles, 'public/js/vendor.js').version();
-mix.styles(vendorCssFiles, 'public/css/vendor.css').version();
+mix.scripts(vendorJsFiles, 'public/assets/js/vendor.js').version();
+mix.styles(vendorCssFiles, 'public/assets/css/vendor.css').version();
+
+// mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');
+// mix.copyDirectory('resources/assets/webfonts', 'public/assets/webfonts');
