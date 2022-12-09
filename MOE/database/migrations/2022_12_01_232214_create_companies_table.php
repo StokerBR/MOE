@@ -20,9 +20,14 @@ class CreateCompaniesTable extends Migration
             $table->string('cnpj', 18);
             $table->string('email', 100);
             $table->string('password', 60);
+            $table->integer('state_id');
+            $table->integer('city_id');
             $table->text('additional_info')->nullable();
             $table->boolean('blocked')->default(false);
             $table->timestamps();
+
+            $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('city_id')->references('id')->on('cities');
         });
     }
 

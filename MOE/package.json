@@ -21,9 +21,12 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
-        "bootstrap": "^4.6.2",
+        "bootstrap": "^5.2.3",
+        "compass-mixins": "^0.12.12",
         "fs": "0.0.1-security",
         "glob": "^8.0.3",
-        "jquery": "^3.6.1"
+        "jquery": "^3.6.1",
+        "parsleyjs": "^2.9.2",
+        "select2": "^4.1.0-rc.0"
     }
 }

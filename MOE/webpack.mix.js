@@ -22,15 +22,21 @@ mix.sass('resources/assets/scss/app.scss', 'public/assets/css/app.css').options(
 
 let vendorJsFiles = [
     'node_modules/jquery/dist/jquery.min.js',
-    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+    'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+    'node_modules/parsleyjs/dist/parsley.min.js',
+	'node_modules/parsleyjs/dist/i18n/pt-br.js',
+    'node_modules/select2/dist/js/select2.min.js',
 ];
 
 let vendorCssFiles = [
-    'node_modules/bootstrap/dist/css/bootstrap.min.css'
+    'node_modules/bootstrap/dist/css/bootstrap.min.css',
+    'node_modules/select2/dist/css/select2.min.css',
+    'resources/assets/vendors/mdi/css/materialdesignicons.min.css',
 ];
 
 mix.scripts(vendorJsFiles, 'public/assets/js/vendor.js').version();
 mix.styles(vendorCssFiles, 'public/assets/css/vendor.css').version();
 
+// mix.copyDirectory('resources/assets/img', 'public/assets/img');
 // mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');
 // mix.copyDirectory('resources/assets/webfonts', 'public/assets/webfonts');

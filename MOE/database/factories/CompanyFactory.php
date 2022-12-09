@@ -14,7 +14,7 @@ class CompanyFactory extends Factory
      * @return array
      */
     public function definition() {
-        
+
         $f = $this->faker;
 
         $f->addProvider(new Company($f));
@@ -26,6 +26,8 @@ class CompanyFactory extends Factory
             'social_reason' => $name.' '.$f->companySuffix(),
             'cnpj' => $f->cnpj(),
             'email' => $f->companyEmail(),
+            'state_id' => random_int(1, 27),
+            'city_id' => random_int(1, 135),
             'additional_info' => !!random_int(0, 1) ? $f->text() : null
         ];
     }

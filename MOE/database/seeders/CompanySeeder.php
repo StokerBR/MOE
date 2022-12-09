@@ -26,6 +26,8 @@ class CompanySeeder extends Seeder
             'cnpj' => '01.567.601/0001-43',
             'email' => 'empresa@moe.com',
             'password' => $moeHash,
+            'state_id' => 10,
+            'city_id' => 1
         ]);
 
         Company::factory([

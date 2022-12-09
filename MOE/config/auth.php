@@ -88,7 +88,7 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\Company::class,
         ],
-        'course-coordinator' => [
+        'course-coordinators' => [
             'driver' => 'eloquent',
             'model' => App\Models\CourseCoordinator::class,
         ],

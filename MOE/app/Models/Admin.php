@@ -11,4 +11,15 @@ class Admin extends Model
 
     public $timestamps = false;
 
+    /**
+     * Retorna o menu do usuário
+     */
+    public function menu() {
+
+        return [
+            [ 'name' => 'Home',	'url' => '/', 'icon' => 'mdi mdi-home' ],
+        ];
+
+    }
+
 }
