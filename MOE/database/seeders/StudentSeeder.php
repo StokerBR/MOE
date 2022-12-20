@@ -21,8 +21,8 @@ class StudentSeeder extends Seeder
         $moeHash = Hash::make('moe');
 
         Student::create([
-            'name' => 'Aluno MOE',
-            'email' => 'aluno@moe.com',
+            'name' => 'Universitário MOE',
+            'email' => 'universitario@moe.com',
             'password' => $moeHash,
             'state_id' => 10,
             'city_id' => 1,

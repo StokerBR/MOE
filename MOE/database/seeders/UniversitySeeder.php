@@ -19,6 +19,9 @@ class UniversitySeeder extends Seeder
 
         University::create([
             'name' => 'Universidade Federal de Goiás',
+            'acronym' => 'UFG',
+            'state_id' => 10,
+            'city_id' => 1
         ]);
 
         University::factory()->count($qty)->create();

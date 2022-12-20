@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
             CompanySeeder::class,
             CourseCoordinatorSeeder::class,
             AdminSeeder::class,
+            InternshipSeeder::class,
         ]);
 
     }

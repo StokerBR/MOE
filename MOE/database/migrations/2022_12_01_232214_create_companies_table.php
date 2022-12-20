@@ -24,6 +24,7 @@ class CreateCompaniesTable extends Migration
             $table->integer('city_id');
             $table->text('additional_info')->nullable();
             $table->boolean('blocked')->default(false);
+            $table->rememberToken();
             $table->timestamps();
 
             $table->foreign('state_id')->references('id')->on('states');

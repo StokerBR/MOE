@@ -13,9 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('teste', function () {
     return view('welcome');
 });
+
+Route::get('/', function () {
+    return view('pages.choose-account');
+})->name('choose-account');
 
 Route::get('login', function () {
     return view('pages.login');

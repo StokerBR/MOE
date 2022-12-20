@@ -18,7 +18,7 @@ trait LoginTrait {
 
         if (Auth::guard($this->guard)->check()) {
             Session::flash('error', 'Não é possível acessar essa tela. Você já está logado na plataforma.');
-            return redirect(dynUrl('perfil'));
+            return redirect(dynUrl('/'));
 
         } else {
             return view($this->baseViewPath.'auth.login');
@@ -32,6 +32,8 @@ trait LoginTrait {
      * @return void
      */
     public function traitLogin(Request $request) {
+
+        // dd($request->all(), dynUrl('/'));
 
         $validator = Validator::make($request->all(), [
             'email' => 'required|string|email|max:255',
@@ -63,7 +65,7 @@ trait LoginTrait {
             Auth::guard($this->guard)->login($user, ($request->remember ? true : false));
         }
 
-        return dynRedirect('');
+        return dynRedirect('/');
     }
 
     /**

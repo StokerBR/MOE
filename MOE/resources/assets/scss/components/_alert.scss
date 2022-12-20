@@ -1,0 +1,79 @@
+/* Alerts */
+.alert {
+    padding: 15px;
+    position: relative;
+    font-weight: 400;
+    padding-right: 30px;
+    border: none;
+    border-radius: 2px;
+
+    p {
+        margin: 0;
+    }
+
+    span {
+        display: block;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .texts {
+
+        p {
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        transition: all 0.4s ease-in-out;
+        color: #fff;
+        outline: none !important;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+
+    &.alert-danger {
+        background-image: map-get($theme-gradient-colors, 'danger');
+        border-color: $danger;
+        // color: #fff;
+    }
+
+    &.alert-success {
+        background-image: map-get($theme-gradient-colors, 'success');
+        border-color: $success;
+        // color: #fff;
+    }
+
+    &.alert-info {
+        background-image: map-get($theme-gradient-colors, 'info');
+        border-color: $info;
+        // color: #fff;
+    }
+
+    &.alert-warning {
+        background-image: map-get($theme-gradient-colors, 'warning');
+        border-color: $warning;
+        // color: #fff;
+    }
+
+}

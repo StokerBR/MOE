@@ -22,6 +22,7 @@ class CreateCourseCoordinatorsTable extends Migration
             $table->integer('university_id');
             $table->integer('course_id');
             $table->boolean('blocked')->default(false);
+            $table->rememberToken();
             $table->timestamps();
 
             $table->foreign('university_id')->references('id')->on('universities');

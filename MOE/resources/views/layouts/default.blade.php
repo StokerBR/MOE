@@ -27,7 +27,7 @@
 
         <div class="container-scroller">
 
-            @include('partials._navbar')
+            @include('partials._navbar', ['user' => $user, 'userType' => $currentGuard])
 
             <div class="container-fluid page-body-wrapper">
 

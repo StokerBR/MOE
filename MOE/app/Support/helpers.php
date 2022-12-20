@@ -112,7 +112,7 @@ if (!function_exists('adminRedirect')) {
 if (!function_exists('studentRedirect')) {
 
     /**
-     * Redirectiona para uma url de aluno
+     * Redirectiona para uma url de universitário
      * @param unknown $url
      * @return \Illuminate\Routing\Redirector|\Illuminate\Http\RedirectResponse
      */
@@ -163,7 +163,7 @@ if (!function_exists('adminUrl')) {
 if (!function_exists('studentUrl')) {
 
     /**
-     * Obtem a url de aluno
+     * Obtem a url de universitário
      * @param unknown $url
      * @return \Illuminate\Contracts\Routing\UrlGenerator|string
      */
@@ -210,7 +210,7 @@ if (!function_exists('adminPrefix')) {
 if (!function_exists('studentPrefix')) {
 
     /**
-     * Obtem o prefix de rota de aluno
+     * Obtem o prefix de rota de universitário
      * @return string
      */
     function studentPrefix() {
@@ -349,6 +349,32 @@ if (!function_exists('checkCPF')) {
 
             return true;
         }
+    }
+
+}
+
+
+if (!function_exists('randomArrayUniqueNumbers')) {
+
+    /**
+     * Retorna um array em orem aleatória de números não repetidos
+     *
+     * @param int $min
+     * @param int $max
+     * @param int $size
+     * @return array
+     */
+    function randomArrayUniqueNumbers($min, $max, $size = null) {
+
+        $numbers = range($min, $max);
+        shuffle($numbers);
+
+        if ($size) {
+            array_splice($numbers, $size);
+        }
+
+        return $numbers;
+
     }
 
 }

@@ -1,0 +1,122 @@
+form {
+
+    .required.two-asterisk {
+        margin: 0px !important;
+    }
+
+    .required {
+
+        &.two-asterisk:first-child {
+            margin-left: 4px !important;
+        }
+
+        &.two-asterisk:last-child {
+            margin-right: 4px !important;
+        }
+    }
+}
+
+.form-group {
+	margin-bottom: 10px;
+
+	label {
+		font-weight: 500;
+		margin-bottom: 3px;
+		display: flex;
+		align-items: center;
+
+		.required {
+			color: map-get($map: $colors, $key: "danger");
+			font-size: 8px;
+    		margin-left: 4px;
+		}
+	}
+
+	.label-wrapper {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0.5rem;
+
+		label {
+			margin: 0 auto 0 0;
+		}
+
+		a {
+			font-weight: 500;
+			font-size: 13px;
+        }
+
+        small {
+			font-size: 13px;
+			line-height: 16px;
+			opacity: 0.7;
+        }
+	}
+
+	.form-control {
+
+		&:focus, &:active {
+
+			&:not([readonly]):not([disabled]) {
+				border-color: $primary;
+			}
+		}
+
+		&.error {
+			border-color: $danger;
+		}
+	}
+
+	.input-with-icon {
+		position: relative;
+
+		.form-control {
+			padding-right: 44px;
+		}
+
+		i {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 44px;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.3;
+		}
+
+		&.password-icon {
+
+			i {
+				cursor: pointer;
+			}
+
+			&.password-visible i:before {
+				content: "\f209";
+			}
+
+		}
+
+	}
+
+}
+
+.parsley-errors-list {
+	margin: 6px 0 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		font-size: 12px;
+		font-weight: 400;
+		color: $danger;
+	}
+}
+
+.form-sections {
+
+    .form-section:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

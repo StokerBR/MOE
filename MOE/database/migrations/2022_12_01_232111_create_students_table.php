@@ -26,6 +26,7 @@ class CreateStudentsTable extends Migration
             $table->integer('course_completion')->nullable();
             $table->text('bio')->nullable();
             $table->boolean('blocked')->default(false);
+            $table->rememberToken();
             $table->timestamps();
 
             $table->foreign('state_id')->references('id')->on('states');
