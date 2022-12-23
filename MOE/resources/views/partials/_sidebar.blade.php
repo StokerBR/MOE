@@ -6,11 +6,10 @@
 
             @php
 
-                // $prefix = dynPrefix();
-                $prefix = '/';
+                $prefix = dynPrefix();
 
                 $hasChildren = isset($item['children']) && count($item['children']) > 0;
-                $url = "#";
+                $item["active"] = false;
 
                 if ($hasChildren) {
 

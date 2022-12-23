@@ -17,6 +17,7 @@ class Company extends Authenticatable
 
         return [
             [ 'name' => 'Home',	'url' => '/', 'icon' => 'mdi mdi-home' ],
+            [ 'name' => 'Vagas de Estágio',	'url' => 'vagas', 'icon' => 'mdi mdi-tie' ],
         ];
 
     }

@@ -1,0 +1,28 @@
+.breadcrumb {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .breadcrumb-item {
+
+        a {
+            color: rgba(52, 58, 64, 0.8);
+            text-decoration: none;
+            transition: all 0.4s ease;
+
+            &:hover {
+                color: $primary;
+            }
+
+        }
+
+        &.active {
+            color: black;
+        }
+
+        &+.breadcrumb-item::before {
+            content: "•";
+        }
+
+    }
+
+}

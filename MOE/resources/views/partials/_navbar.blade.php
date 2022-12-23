@@ -30,7 +30,7 @@
             }
         @endphp
 
-        <span class="align-self-center ms-2">{{ $painel }}</span>
+        <span class="align-self-center ms-2 user-select-none">{{ $painel }}</span>
 
         <ul class="navbar-nav navbar-nav-right">
 
@@ -38,16 +38,24 @@
 
                 <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="nav-profile-text">
-                        <p class="mb-1 text-black">{{ $user ? $user->name : 'Usuário' }}</p>
+                        <p class="mb-1 text-black">{{ $user ? ($user->name ?? $user->fantasy_name) : 'Usuário' }}</p>
                     </div>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                     <a class="dropdown-item" href="#">
-                    <i class="mdi mdi-account me-2 text-success"></i> Perfil </a>
+                        <i class="mdi mdi-account me-2 text-success"></i>
+                        Perfil
+                    </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="{{ dynUrl('logout') }}">
-                    <i class="mdi mdi-logout me-2 text-primary"></i> Logout </a>
+                    <form action="{{ dynUrl('logout') }}" method="POST">
+                        @csrf
+                        @method('POST')
+                        <button class="dropdown-item" type="submit">
+                            <i class="mdi mdi-logout me-2 text-primary"></i>
+                            Logout
+                        </button>
+                    </form>
                 </div>
 
             </li>

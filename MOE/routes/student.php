@@ -1,21 +1,19 @@
 <?php
 
 use App\Http\Controllers\Student\Auth\LoginController;
+use App\Http\Controllers\Student\StudentController;
 use Illuminate\Support\Facades\Route;
 
 // Login
-Route::get    ("login", [LoginController::class, "index"])->name("student.login");
-Route::post   ("login", [LoginController::class, "login"]);
+Route::get    ('login', [LoginController::class, 'index'])->name('student.login');
+Route::post   ('login', [LoginController::class, 'login']);
 
-Route::group(["middleware" => ["auth:student"]], function() {
+Route::group(['middleware' => ['auth:student']], function() {
 
     // Logout
-    Route::get("logout", [LoginController::class, "logout"]);
+    Route::post('logout', [LoginController::class, 'logout']);
 
-    // Dashboard
-    // Route::get("", [HomeController::class, "index"]);
-    Route::get('', function () {
-        return view('student.home');
-    });
+    // Home
+    Route::get('', [StudentController::class, 'home']);
 
 });
