@@ -16,8 +16,9 @@ Sistema Web do Mural de Oportunidades de Estágio
 2. Entrar (cd) neste diretório (/MOE), para executar os comandos a seguir
 3. `composer install`
 4. `npm install`
-5. `php artisan migrate:fresh --seed` *(fazer as migrations e popular o banco)*
-6. `php artisan serve` *(iniciar o servidor de desenvolvimento, será aberto em http://localhost:8000)*
+5. `npm run prod`
+6. `php artisan migrate:fresh --seed` *(fazer as migrations e popular o banco)*
+7. `php artisan serve` *(iniciar o servidor de desenvolvimento, será aberto em http://localhost:8000)*
 
 #### Informações para acesso
 -	Usuário Universitário padrão: universitario@moe.com

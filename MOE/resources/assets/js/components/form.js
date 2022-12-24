@@ -209,6 +209,10 @@ function loadSelect2($select) {
         };
     }
 
+    if ($select.hasClass('no-search')) {
+        defaultOptions['minimumResultsForSearch'] = -1
+    }
+
     $select.select2(defaultOptions);
 
 }

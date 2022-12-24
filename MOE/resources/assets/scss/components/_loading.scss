@@ -1,0 +1,52 @@
+/* Loading */
+.loader-container {
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255,255,255,.6);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+
+	.loader-content {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.loader {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			left: auto;
+			top: auto;
+			border: 3px solid $primary;
+			border-radius: 30px;
+			height: 30px;
+			opacity: 0;
+			z-index: 10;
+			width: 30px;
+			animation: pulsate .7s ease-out infinite;
+		}
+	}
+}
+
+@keyframes pulsate {
+	0% {
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1.2);
+		opacity: 0;
+	}
+}
+
+body > .loader-container {
+    position: fixed;
+}

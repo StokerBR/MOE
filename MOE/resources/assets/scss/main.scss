@@ -59,6 +59,26 @@ html, body {
 
     }
 
+    .main-card + .page-buttons {
+        margin-top: 20px;
+    }
+
+    .page-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        column-gap: 5px;
+        row-gap: 5px;
+
+        .btn {
+            font-weight: 500;
+
+            i {
+                margin-right: 6px;
+            }
+        }
+    }
+
 }
 
 table.table {
@@ -84,8 +104,4 @@ a.btn-icon {
 
 .hide {
     display: none !important;
-}
-
-.required {
-    color: red;
 }

@@ -41,7 +41,7 @@
 
                 @include('partials._alert')
 
-                <form action="{{ url($userType.'/login') }}" data-parsley-validate method="POST">
+                <form class="onsubmit-wait" action="{{ url($userType.'/login') }}" data-parsley-validate method="POST">
 
                     @method('POST')
                     @csrf

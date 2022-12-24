@@ -19,7 +19,8 @@ Route::group(['middleware' => ['auth:company']], function() {
 
     Route::group(['prefix' => 'vagas'], function() {
 
-        Route::get('', [InternshipController::class, 'index']);
+        Route::get('',          [InternshipController::class, 'index']);
+        Route::get('cadastrar', [InternshipController::class, 'create']);
 
     });
 

@@ -37,6 +37,7 @@ let vendorCssFiles = [
 mix.scripts(vendorJsFiles, 'public/assets/js/vendor.js').version();
 mix.styles(vendorCssFiles, 'public/assets/css/vendor.css').version();
 
-// mix.copyDirectory('resources/assets/img', 'public/assets/img');
-// mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');
-// mix.copyDirectory('resources/assets/webfonts', 'public/assets/webfonts');
+if (mix.inProduction()) {
+    mix.copyDirectory('resources/assets/img', 'public/assets/img');
+    mix.copyDirectory('resources/assets/fonts', 'public/assets/fonts');
+}

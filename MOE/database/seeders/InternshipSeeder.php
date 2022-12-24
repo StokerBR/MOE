@@ -19,6 +19,7 @@ class InternshipSeeder extends Seeder
         $qty = 20;
 
         $countCourses = Course::count();
+        $approved = [true, false, null];
 
         for ($i = 0; $i < $qty; $i++) {
 
@@ -30,7 +31,8 @@ class InternshipSeeder extends Seeder
 
                 InternshipCourse::create([
                     'internship_id' => $internship->id,
-                    'course_id' => $courseId
+                    'course_id' => $courseId,
+                    'approved' => $approved[random_int(0, 2)],
                 ]);
 
             }

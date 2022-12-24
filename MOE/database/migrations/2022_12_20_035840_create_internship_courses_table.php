@@ -17,6 +17,7 @@ class CreateInternshipCoursesTable extends Migration
             $table->id();
             $table->foreignId('internship_id');
             $table->foreignId('course_id');
+            $table->boolean('approved')->nullable();
 
             $table->foreign('internship_id')->references('id')->on('internships');
             $table->foreign('course_id')->references('id')->on('courses');
