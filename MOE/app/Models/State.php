@@ -11,4 +11,8 @@ class State extends Model
 
     public $timestamps = false;
 
+    public function cities() {
+        return $this->hasMany(City::class, 'state_id', 'id');
+    }
+
 }

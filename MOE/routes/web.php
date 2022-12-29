@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,14 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('teste', function () {
-    return view('welcome');
-});
+Route::get('teste', [HomeController::class, 'teste']);
 
-Route::get('/', function () {
-    return view('pages.choose-account');
-})->name('choose-account');
+Route::get('/', [HomeController::class, 'chooseAccount'])->name('choose-account');
 
-Route::get('login', function () {
-    return view('pages.login');
-});
+Route::get('estados/{stateId}/cidades', [HomeController::class, 'getCities']);

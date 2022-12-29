@@ -19,8 +19,12 @@ Route::group(['middleware' => ['auth:company']], function() {
 
     Route::group(['prefix' => 'vagas'], function() {
 
-        Route::get('',          [InternshipController::class, 'index']);
-        Route::get('cadastrar', [InternshipController::class, 'create']);
+        Route::get    ('',            [InternshipController::class, 'index']);
+        Route::get    ('cadastrar',   [InternshipController::class, 'create']);
+        Route::post   ('',            [InternshipController::class, 'insert']);
+        Route::get    ('{id}/editar', [InternshipController::class, 'edit']);
+        Route::put    ('',            [InternshipController::class, 'update']);
+        Route::delete ('',            [InternshipController::class, 'delete']);
 
     });
 

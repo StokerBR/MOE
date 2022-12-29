@@ -21,7 +21,7 @@ class CitySeeder extends Seeder
         ]);
 
         $states = State::all();
-        $qty = 5;
+        $qty = 10;
 
         foreach ($states as $state) {
 

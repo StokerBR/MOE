@@ -30,6 +30,8 @@
             ]
         ])
 
+        @include('partials._alert')
+
         <div class="card main-card">
 
             <div class="card-body table-responsive">

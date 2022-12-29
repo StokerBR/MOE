@@ -153,7 +153,7 @@ function stateSelect($elem) {
             $city.empty();
             $city.append('<option value="">Selecione</option>');
 
-            var url = siteUrl('estados/' + stateId + '/cidades');
+            var url = siteUrl('estados/' + stateId + '/cidades', true);
 
             $.get(url, function(cities) {
 
@@ -173,6 +173,7 @@ function stateSelect($elem) {
 
             }).fail(function(err) {
                 console.error(err);
+                closeWait();
 
             }).then(function(){
                 $city.trigger('change');
@@ -198,15 +199,12 @@ function loadSelect2($select) {
         placeholder = $select.attr("placeholder");
     }
 
+    var defaultOptions = {
+        "language": "pt-BR",
+    };
+
     if ($select.attr("multiple")) {
-        var defaultOptions = {
-            "language": "pt-BR",
-            'placeholder' : placeholder
-        };
-    } else {
-        var defaultOptions = {
-            "language": "pt-BR"
-        };
+        defaultOptions = {...defaultOptions, 'placeholder' : placeholder}
     }
 
     if ($select.hasClass('no-search')) {

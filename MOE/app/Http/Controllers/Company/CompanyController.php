@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class CompanyController extends Controller {
 
+    /**
+     * Exibe a página inicial do painel de empresa
+     *
+     * @return void
+     */
     public function home() {
         return view('company.home');
     }

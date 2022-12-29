@@ -10,7 +10,7 @@ class Internship extends Model
     use HasFactory;
 
     public function courses() {
-        return $this->hasMany(InternshipCourse::class, 'internship_id', 'id');
+        return $this->belongsToMany(Course::class, 'internship_courses', 'internship_id', 'course_id');
     }
 
 }

@@ -19,6 +19,7 @@ class InternshipFactory extends Factory
         $shifts = ['m', 'v', 'i'];
 
         return [
+            'company_id' => 1,
             'title' => $f->sentence(4),
             'description' => $f->text(),
             'assignments' => $f->text(),

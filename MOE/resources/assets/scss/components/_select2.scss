@@ -79,10 +79,20 @@ $select2-option-selected-text-color: #000;
 						align-items: center;
 						justify-content: center;
 						border: none;
-						background-color: $select2-border-color;
+                        background-color: $select2-option-selected-bg-color;
+                        color: white;
+                        white-space: normal;
 
 						.select2-selection__choice__remove {
 							margin-left: 6px;
+                            position: unset;
+                            color: white;
+                            border-right: none;
+
+                            &:hover {
+                                background-color: $select2-option-highlight-bg-color;
+                            }
+
 						}
 					}
 				}
@@ -125,6 +135,19 @@ $select2-option-selected-text-color: #000;
 			}
 		}
 	}
+
+    .select2-selection--multiple {
+
+        .select2-selection__rendered {
+            margin: 0;
+        }
+
+        .select2-search--inline {
+            flex-grow: 1;
+        }
+
+    }
+
 }
 
 .form-group .select2-container {

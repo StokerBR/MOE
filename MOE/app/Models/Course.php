@@ -9,14 +9,18 @@ class Course extends Model
 {
     use HasFactory;
 
-    /**
-     * Retorna o menu do usuário
-     */
-    public function menu() {
+    public function internships() {
+        return $this->belongsToMany(Internship::class, 'internship_courses', 'course_id', 'internship_id');
+    }
 
-        return [
-            [ 'name' => 'Home',	'url' => '/', 'icon' => 'mdi mdi-home' ],
-        ];
+    public function scopeForInternship($query) {
+
+        $query->from('courses as c')
+        ->join('universities as u', 'u.id', 'c.university_id');
+
+        $query->select('c.*', 'u.acronym');
+
+        $query->orderBy('c.name', 'asc');
 
     }
 

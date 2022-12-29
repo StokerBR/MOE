@@ -7,9 +7,13 @@
  *
  * @return string
  */
-function siteUrl(path) {
+function siteUrl(path, baseUrl = false) {
 
     var siteUrl = $('meta[name="site_url"]').attr('content');
+
+	if (baseUrl) {
+		siteUrl = window.location.origin;
+	}
 
     if (path[0] == "/") {
         path = path.substring(1);
