@@ -95,7 +95,7 @@ class InternshipController extends Controller {
 
         $internship->save();
 
-        $internship->courses()->sync($request->course_id);
+        $internship->courses()->syncWithPivotValues($request->course_id, ['approved' => null]);
 
     }
 

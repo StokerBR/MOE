@@ -26,7 +26,11 @@ class InternshipSeeder extends Seeder
             $internship = Internship::factory()->create();
 
             $courses = randomArrayUniqueNumbers(1, $countCourses);
-            array_splice($courses, -random_int(0, 10));
+
+            $limitCourses = $countCourses > 20 ? 20 : $countCourses;
+
+            array_splice($courses, random_int(1, $limitCourses));
+
             foreach($courses as $courseId) {
 
                 InternshipCourse::create([
