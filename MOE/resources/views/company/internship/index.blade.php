@@ -76,7 +76,7 @@
                                         <a class="btn btn-info btn-icon" title="Informações da Vaga" href="{{ companyUrl('vagas/'.$internship->id.'/info') }}">
                                             <i class="mdi mdi-information-variant"></i>
                                         </a>
-                                        <button class="btn btn-danger btn-icon" title="Deletar Vaga">
+                                        <button class="btn btn-danger btn-icon btn-delete" title="Deletar Vaga" data-url="vagas" data-id="{{ $internship->id }}">
                                             <i class="mdi mdi-delete"></i>
                                         </button>
                                     </td>

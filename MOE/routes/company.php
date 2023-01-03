@@ -20,6 +20,7 @@ Route::group(['middleware' => ['auth:company']], function() {
     Route::group(['prefix' => 'vagas'], function() {
 
         Route::get    ('',            [InternshipController::class, 'index']);
+        Route::get    ('{id}/info',   [InternshipController::class, 'info']);
         Route::get    ('cadastrar',   [InternshipController::class, 'create']);
         Route::post   ('',            [InternshipController::class, 'insert']);
         Route::get    ('{id}/editar', [InternshipController::class, 'edit']);

@@ -1,0 +1,25 @@
+.internship-status-tag {
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 600;
+
+    &.pending {
+        // background: map-get($theme-gradient-colors, 'secondary');
+        background-color: $secondary;
+        color: #4e4c4c;
+    }
+
+    &.rejected {
+        // background: map-get($theme-gradient-colors, 'danger');
+        background-color: $danger;
+        color: #5b2c36;
+    }
+
+    &.approved {
+        // background: map-get($theme-gradient-colors, 'success');
+        background-color: $success;
+        color: #0b5247;
+    }
+
+}

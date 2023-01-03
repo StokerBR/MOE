@@ -27,12 +27,14 @@ let vendorJsFiles = [
 	'node_modules/parsleyjs/dist/i18n/pt-br.js',
     'node_modules/select2/dist/js/select2.min.js',
     'node_modules/select2/dist/js/i18n/pt-BR.js',
+	'node_modules/bootbox/bootbox.min.js',
 ];
 
 let vendorCssFiles = [
     'node_modules/bootstrap/dist/css/bootstrap.min.css',
     'node_modules/select2/dist/css/select2.min.css',
     'resources/assets/vendors/mdi/css/materialdesignicons.min.css',
+	'node_modules/animate.css/animate.css',
 ];
 
 mix.scripts(vendorJsFiles, 'public/assets/js/vendor.js');

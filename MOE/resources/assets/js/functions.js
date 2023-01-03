@@ -23,6 +23,13 @@ function siteUrl(path, baseUrl = false) {
 }
 
 /**
+ * Obtem o token csrf
+ */
+function getCsrfToken() {
+    return $('meta[name="csrf_token"]').attr('content');
+}
+
+/**
  * Bloquear o elemento (abrir loading)
  */
 $.fn.wait = function(text) {

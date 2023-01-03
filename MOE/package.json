@@ -21,6 +21,8 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
+        "animate.css": "^3.7.0",
+        "bootbox": "^4.4.0",
         "bootstrap": "^5.2.3",
         "compass-mixins": "^0.12.12",
         "fs": "0.0.1-security",
