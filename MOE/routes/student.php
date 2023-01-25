@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Student\Auth\LoginController;
+use App\Http\Controllers\Student\InternshipController;
 use App\Http\Controllers\Student\StudentController;
 use Illuminate\Support\Facades\Route;
 
@@ -15,5 +16,13 @@ Route::group(['middleware' => ['auth:student']], function() {
 
     // Home
     Route::get('', [StudentController::class, 'home']);
+
+    // Vagas
+    Route::group(['prefix' => 'vagas'], function() {
+
+        Route::get  ('',              [InternshipController::class, 'index']);
+        Route::get  ('{id}/info',     [InternshipController::class, 'info']);
+
+    });
 
 });

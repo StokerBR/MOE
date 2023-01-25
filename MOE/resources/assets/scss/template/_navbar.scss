@@ -65,7 +65,8 @@
         width: calc(100% - #{$sidebar-width-lg});
         height: $navbar-height;
         @media (max-width: 991px) {
-            width: auto;
+            // width: auto;
+            flex: 1;
             padding-left: 15px;
             padding-right: 15px;
         }
@@ -281,7 +282,7 @@
                                 line-height: 1;
                             }
                             @media (max-width: 767px) {
-                                display: none;
+                                // display: none;
                             }
                         }
                         &.dropdown-toggle {
@@ -293,8 +294,8 @@
                 }
             }
             &.navbar-nav-right {
+                margin-left: auto;
                 @media (min-width: 992px) {
-                    margin-left: auto;
                     .rtl & {
                         margin-left: 0;
                         margin-right: auto;

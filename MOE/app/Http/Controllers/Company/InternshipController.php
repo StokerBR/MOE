@@ -111,7 +111,9 @@ class InternshipController extends Controller {
      */
     public function index(Request $request) {
 
-        $internships = Internship::orderBy('id', 'desc')->paginate(10);
+        $company = Auth::guard('company')->user();
+
+        $internships = Internship::where('company_id', $company->id)->orderBy('id', 'desc')->paginate(10);
 
         $data = [
             'internships' => $internships,

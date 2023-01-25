@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CourseCoordinator\Auth\LoginController;
 use App\Http\Controllers\CourseCoordinator\CourseCoordinatorController;
+use App\Http\Controllers\CourseCoordinator\InternshipController;
 use Illuminate\Support\Facades\Route;
 
 // Login
@@ -15,5 +16,15 @@ Route::group(['middleware' => ['auth:course-coordinator']], function() {
 
     // Home
     Route::get('', [CourseCoordinatorController::class, 'home']);
+
+    // Vagas
+    Route::group(['prefix' => 'vagas'], function() {
+
+        Route::get  ('',              [InternshipController::class, 'index']);
+        Route::get  ('{id}/info',     [InternshipController::class, 'info']);
+        Route::post ('{id}/aprovar',  [InternshipController::class, 'approve']);
+        Route::post ('{id}/rejeitar', [InternshipController::class, 'reject']);
+
+    });
 
 });

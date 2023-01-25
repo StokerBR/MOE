@@ -21,4 +21,33 @@ class Internship extends Model
         return $this->hasOne(City::class, 'id', 'city_id');
     }
 
+    public function scopeForCoordinator($query, $courseCoordinator) {
+
+        $query->from('internships as i')
+        ->leftJoin('internship_courses as ic', 'ic.internship_id', 'i.id');
+
+        $query->where('ic.course_id', $courseCoordinator->course_id);
+
+        $query->select('i.*', 'ic.id as ic_id', 'ic.approved');
+        $query->selectRaw('(CASE WHEN ic.approved is null THEN 1 ELSE 0 END) as pending_approval');
+
+        $query->orderBy('pending_approval', 'desc')
+        ->orderBy('id', 'desc');
+
+    }
+
+    public function scopeForStudent($query, $student) {
+
+        $query->from('internships as i')
+        ->leftJoin('internship_courses as ic', 'ic.internship_id', 'i.id');
+
+        $query->where('ic.course_id', $student->course_id);
+        $query->where('ic.approved', true);
+
+        $query->select('i.*', 'ic.id as ic_id');
+
+        $query->orderBy('id', 'desc');
+
+    }
+
 }

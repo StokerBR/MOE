@@ -9,20 +9,16 @@
             Exibir filtros
         </button>
 
-        <a href="{{ companyUrl('vagas/cadastrar') }}" type="button" class="btn btn-outline-primary" title="Cadastrar nova vaga de estágio">
-            <i class="mdi mdi-plus"></i> Nova vaga de estágio
-        </a>
-
 	</div>
 
 @endsection
 
 @section('content')
 
-    <div class="page page-company page-internships page-index">
+    <div class="page page-student page-internships page-index">
 
         @include('partials._page-header', [
-            'title' => 'Vagas de Estágio',
+            'title' => 'Vagas de Estágio para seu Curso',
             'icon' => 'mdi mdi-tie',
             'breadcrumb' => [
                 ['name' => 'Home', 'url' => ''],
@@ -70,15 +66,9 @@
                                     <td>{{ $internship->work_model == 'p' ? 'Presencial' : 'Remoto' }}</td>
                                     <td>{{ $shifts[$internship->shift] }}</td>
                                     <td class="actions">
-                                        <a class="btn btn-primary btn-icon" title="Editar Vaga" href="{{ companyUrl('vagas/'.$internship->id.'/editar') }}">
-                                            <i class="mdi mdi-lead-pencil"></i>
-                                        </a>
-                                        <a class="btn btn-info btn-icon" title="Informações da Vaga" href="{{ companyUrl('vagas/'.$internship->id.'/info') }}">
+                                        <a class="btn btn-info btn-icon" title="Informações da Vaga" href="{{ studentUrl('vagas/'.$internship->ic_id.'/info') }}">
                                             <i class="mdi mdi-information-variant"></i>
                                         </a>
-                                        <button class="btn btn-danger btn-icon btn-delete" title="Deletar Vaga" data-url="vagas" data-id="{{ $internship->id }}">
-                                            <i class="mdi mdi-delete"></i>
-                                        </button>
                                     </td>
                                 </tr>
 
