@@ -1,13 +1,23 @@
 <?php
 
 use App\Http\Controllers\Company\Auth\LoginController;
+use App\Http\Controllers\Company\Auth\RegisterController;
 use App\Http\Controllers\Company\CompanyController;
 use App\Http\Controllers\Company\InternshipController;
 use Illuminate\Support\Facades\Route;
 
-// Login
-Route::get    ('login', [LoginController::class, 'index'])->name('company.login');
-Route::post   ('login', [LoginController::class, 'login']);
+
+Route::group(['middleware' => ['guest']], function() {
+
+    // Login
+    Route::get    ('login', [LoginController::class, 'index'])->name('company.login');
+    Route::post   ('login', [LoginController::class, 'login']);
+
+    // Cadastro
+    Route::get    ('cadastrar', [RegisterController::class, 'index']);
+    Route::post   ('cadastrar', [RegisterController::class, 'register']);
+
+});
 
 Route::group(['middleware' => ['auth:company']], function() {
 

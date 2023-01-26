@@ -47,12 +47,12 @@
                     @csrf
 
                     <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" name="email" placeholder="Email" required>
+                        <input type="email" class="form-control form-control-lg" value="{{ old('email') }}" name="email" placeholder="Email" maxlength="100" required>
                     </div>
 
                     <div class="form-group">
                         <div class="input-with-icon password-icon">
-                            <input type="password" class="form-control form-control-lg" name="password" placeholder="Senha" required data-parsley-errors-container="#password-error">
+                            <input type="password" class="form-control form-control-lg" name="password" placeholder="Senha" maxlength="60" required data-parsley-errors-container="#password-error">
                             <i class="mdi mdi-eye"></i>
                         </div>
                         <div id="password-error"></div>
@@ -74,7 +74,7 @@
 
                         <div class="text-center mt-4 font-weight-light">
                             Não tem uma conta?
-                            <a href="" class="text-primary">Criar</a>
+                            <a href="{{ dynUrl('cadastrar') }}" class="text-primary">Criar</a>
                         </div>
 
                     @endif

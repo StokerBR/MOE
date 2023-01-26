@@ -1,21 +1,14 @@
 /* Auth */
 
 .auth {
-    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 
-	.auth-form-light {
+	.auth-form-light, .register-form-light {
 		background: $white;
-		select {
-			color: $input-placeholder-color;
-		}
-		.input-group {
-			.form-control {
-				&:focus,
-				&:active {
-					border-color: $border-color;
-				}
-			}
-		}
+        padding: 3rem;
+        text-align: left;
+
 	}
 
     @media (min-width: 992px) {
@@ -28,31 +21,62 @@
 
 	.brand-logo {
 		margin-bottom: 2rem;
+
 		img {
 			width: 150px;
 		}
+
 	}
+
 	form {
+
 		.form-group {
 			margin-bottom: 1.5rem;
+
 			label {
 				font-size: .8125rem;
 			}
+
 			.form-control {
 				background: transparent;
 				border-radius: 0;
 				font-size: .9375rem;
 			}
+
 		}
-		.auth-form-btn {
+
+		.auth-form-btn, .register-btns > .btn {
 			height: 50px;
 			line-height: 1.5;
 		}
+
+        .register-btns {
+            display: flex;
+            justify-items: flex-end;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+
+        @media (max-width: 767px) {
+
+            .register-btns {
+                flex-direction: column-reverse;
+
+                .btn {
+                    width: 100%;
+                }
+            }
+
+        }
+
 		.auth-link {
 			font-size: $default-font-size;
+
 			&:hover {
 				color: initial;
 			}
+
 		}
+
 	}
 }

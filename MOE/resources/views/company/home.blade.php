@@ -18,4 +18,6 @@
         </nav>
     </div>
 
+    @include('partials._alert')
+
 @endsection

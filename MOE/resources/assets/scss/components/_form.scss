@@ -15,7 +15,7 @@ form {
 
             .required {
                 color: map-get($map: $colors, $key: "danger");
-                font-size: 8px;
+                font-size: 10px;
                 margin-left: 4px;
             }
         }

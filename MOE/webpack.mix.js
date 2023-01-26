@@ -28,6 +28,7 @@ let vendorJsFiles = [
     'node_modules/select2/dist/js/select2.min.js',
     'node_modules/select2/dist/js/i18n/pt-BR.js',
 	'node_modules/bootbox/bootbox.min.js',
+	'node_modules/jquery-mask-plugin/dist/jquery.mask.js',
 ];
 
 let vendorCssFiles = [

@@ -21,6 +21,7 @@ class CreateCourseCoordinatorsTable extends Migration
             $table->string('password', 60);
             $table->integer('university_id');
             $table->integer('course_id');
+            $table->boolean('approved')->nullable();
             $table->boolean('blocked')->default(false);
             $table->rememberToken();
             $table->timestamps();

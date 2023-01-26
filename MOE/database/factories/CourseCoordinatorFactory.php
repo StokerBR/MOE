@@ -25,6 +25,7 @@ class CourseCoordinatorFactory extends Factory
             'email' => $f->email(),
             'university_id' => random_int(1, 20),
             'course_id' => random_int(1, 100),
+            'approved' => !!random_int(0, 1),
         ];
 
     }

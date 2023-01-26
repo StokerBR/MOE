@@ -4,9 +4,13 @@ use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
+Route::group(['middleware' => ['guest']], function() {
+
 // Login
-Route::get    ('login', [LoginController::class, 'index'])->name('admin.login');
-Route::post   ('login', [LoginController::class, 'login']);
+    Route::get  ('login', [LoginController::class, 'index'])->name('admin.login');
+    Route::post ('login', [LoginController::class, 'login']);
+
+});
 
 Route::group(['middleware' => ['auth:admin']], function() {
 

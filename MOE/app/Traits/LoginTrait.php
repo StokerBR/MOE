@@ -33,8 +33,6 @@ trait LoginTrait {
      */
     public function traitLogin(Request $request) {
 
-        // dd($request->all(), dynUrl('/'));
-
         $validator = Validator::make($request->all(), [
             'email' => 'required|string|email|max:255',
             'password' => 'required|string|max:255'
@@ -58,14 +56,31 @@ trait LoginTrait {
 
         });
 
-        if ($validator->fails()) {
-            return back()->withErrors($validator->errors()->first());
+        if (!$validator->fails()) {
+
+            if (!$user->blocked) {
+
+                // Verificar se foi aprovado, caso seja coordenador de curso
+                if ($this->guard == 'course-coordinator' && !$user->approved) {
+
+                    $reason = $user->approved === false ? 'foi rejeitado' : 'ainda não foi aprovado por um administrador';
+
+                    return back()->withErrors("Não é possível realizar o login pois seu cadastro ".$reason)->withInput();
+
+                }
+
+                // Realizar o login e redirecionar para a home
+                Auth::guard($this->guard)->login($user, ($request->remember ? true : false));
+                return dynRedirect('/');
+
+            } else {
+                return back()->withErrors("Não é possível realizar o login pois sua conta foi bloqueada por um administrador")->withInput();
+            }
 
         } else {
-            Auth::guard($this->guard)->login($user, ($request->remember ? true : false));
+            return back()->withErrors($validator->errors()->first())->withInput();
         }
 
-        return dynRedirect('/');
     }
 
     /**

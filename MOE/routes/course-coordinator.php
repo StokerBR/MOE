@@ -5,9 +5,13 @@ use App\Http\Controllers\CourseCoordinator\CourseCoordinatorController;
 use App\Http\Controllers\CourseCoordinator\InternshipController;
 use Illuminate\Support\Facades\Route;
 
-// Login
-Route::get    ('login', [LoginController::class, 'index'])->name('course-coordinator.login');
-Route::post   ('login', [LoginController::class, 'login']);
+Route::group(['middleware' => ['guest']], function() {
+
+    // Login
+    Route::get  ('login', [LoginController::class, 'index'])->name('course-coordinator.login');
+    Route::post ('login', [LoginController::class, 'login']);
+
+});
 
 Route::group(['middleware' => ['auth:course-coordinator']], function() {
 

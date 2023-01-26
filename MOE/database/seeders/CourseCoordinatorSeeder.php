@@ -27,6 +27,7 @@ class CourseCoordinatorSeeder extends Seeder
             'password' => $moeHash,
             'university_id' => 1,
             'course_id' => 1,
+            'approved' => true,
         ]);
 
         CourseCoordinator::factory([
