@@ -12,4 +12,6 @@ MOE/vendor.zip
 MOE/.vscode
 MOE/.editorconfig
 MOE/.styleci.yml
+MOE/postgres
+/postgres
 .tmp.driveupload
