@@ -45,21 +45,21 @@
                     <div class="form-group">
 
                         <label>Descrição <span class="required">*</span></label>
-                        <textarea class="form-control" name="description" rows="3" maxlength="500" required>{{ old('description', $internship->description) }}</textarea>
+                        <textarea class="form-control" name="description" rows="3" maxlength="500" placeholder="Descrição do cargo" required>{{ old('description', $internship->description) }}</textarea>
 
                     </div>
 
                     <div class="form-group">
 
                         <label>Atribuições <span class="required">*</span></label>
-                        <textarea class="form-control" name="assignments" rows="3" maxlength="500" required>{{ old('assignments', $internship->assignments) }}</textarea>
+                        <textarea class="form-control" name="assignments" rows="3" maxlength="500" placeholder="Atribuições do cargo" required>{{ old('assignments', $internship->assignments) }}</textarea>
 
                     </div>
 
                     <div class="form-group">
 
                         <label>Habilidades Desejadas <span class="required">*</span></label>
-                        <textarea class="form-control" name="desired_abilities" rows="3" maxlength="500" required>{{ old('desired_abilities', $internship->desired_abilities) }}</textarea>
+                        <textarea class="form-control" name="desired_abilities" rows="3" maxlength="500" placeholder="Habilidades desejadas do Universitário" required>{{ old('desired_abilities', $internship->desired_abilities) }}</textarea>
 
                     </div>
 
@@ -177,7 +177,7 @@
                             $internshipCourses = $internship->courses;
                         @endphp
 
-                        <label>Cursos <span class="required">*</span></label>
+                        <label>Cursos Destinados <span class="required">*</span></label>
                         <select class="form-control form-select course-select select2" name="course_id[]"  multiple="multiple" required data-parsley-errors-container="#course_id-errors">
                             <option value="">Selecione</option>
                             @foreach ($courses as $course)

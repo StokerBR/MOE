@@ -9,6 +9,10 @@ class Internship extends Model
 {
     use HasFactory;
 
+    public function company() {
+        return $this->belongsTo(Company::class, 'company_id', 'id');
+    }
+
     public function courses() {
         return $this->belongsToMany(Course::class, 'internship_courses', 'internship_id', 'course_id')->withPivot('approved');
     }
@@ -24,11 +28,12 @@ class Internship extends Model
     public function scopeForCoordinator($query, $courseCoordinator) {
 
         $query->from('internships as i')
+        ->join('companies as c', 'c.id', 'i.company_id')
         ->leftJoin('internship_courses as ic', 'ic.internship_id', 'i.id');
 
         $query->where('ic.course_id', $courseCoordinator->course_id);
 
-        $query->select('i.*', 'ic.id as ic_id', 'ic.approved');
+        $query->select('i.*', 'c.fantasy_name as company_name', 'ic.id as ic_id', 'ic.approved');
         $query->selectRaw('(CASE WHEN ic.approved is null THEN 1 ELSE 0 END) as pending_approval');
 
         $query->orderBy('pending_approval', 'desc')
@@ -39,12 +44,13 @@ class Internship extends Model
     public function scopeForStudent($query, $student) {
 
         $query->from('internships as i')
+        ->join('companies as c', 'c.id', 'i.company_id')
         ->leftJoin('internship_courses as ic', 'ic.internship_id', 'i.id');
 
         $query->where('ic.course_id', $student->course_id);
         $query->where('ic.approved', true);
 
-        $query->select('i.*', 'ic.id as ic_id');
+        $query->select('i.*', 'c.fantasy_name as company_name', 'ic.id as ic_id');
 
         $query->orderBy('id', 'desc');
 

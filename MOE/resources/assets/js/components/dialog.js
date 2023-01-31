@@ -5,12 +5,12 @@ var $dialog;
 
 	$dialog = {
 
-		confirm: function(message, callback) {
+		confirm: function(message, callback, isDelete = false) {
 
 			var $footer = $(`
 			<div class="modal-footer">
 				<button type="button" class="btn btn-outline-primary me-auto btn-close-modal">Cancelar</button>
-				<button type="button" class="btn btn-primary btn-confirm">Confirmar</button>
+				<button type="button" class="btn btn-${isDelete ? 'danger' : 'primary'} btn-confirm">Confirmar</button>
 			</div>`);
 
 			// Ao clicar no botão "Confirmar" executar callback

@@ -27,6 +27,10 @@ Route::group(['middleware' => ['auth:company']], function() {
     // Home
     Route::get('', [CompanyController::class, 'home']);
 
+    // Perfil
+    Route::get('perfil', [CompanyController::class, 'profile']);
+
+    // Vagas
     Route::group(['prefix' => 'vagas'], function() {
 
         Route::get    ('',            [InternshipController::class, 'index']);

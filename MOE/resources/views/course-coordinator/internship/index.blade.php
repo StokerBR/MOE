@@ -39,6 +39,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Empresa</th>
                                 <th>Título</th>
                                 <th>Status</th>
                                 <th>Ações</th>
@@ -71,6 +72,7 @@
 
                                 <tr>
                                     <td>{{ $internship->id }}</td>
+                                    <td>{{ $internship->company_name }}</td>
                                     <td>{{ $internship->title }}</td>
                                     <td><span class="tag {{ $status['class'] }}">{{ $status['name'] }}</span></td>
                                     <td class="actions">

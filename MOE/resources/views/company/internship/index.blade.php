@@ -9,7 +9,7 @@
             Exibir filtros
         </button>
 
-        <a href="{{ companyUrl('vagas/cadastrar') }}" type="button" class="btn btn-outline-primary" title="Cadastrar nova vaga de estágio">
+        <a href="{{ companyUrl('vagas/cadastrar') }}" type="button" class="btn btn-primary" title="Cadastrar nova vaga de estágio">
             <i class="mdi mdi-plus"></i> Nova vaga de estágio
         </a>
 

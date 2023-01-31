@@ -1,40 +1,45 @@
-@extends('layouts.blank')
+@extends('layouts.default')
 
 @section('content')
 
-    <div class="auth d-flex align-items-center">
+    <div class="page page-company page-profile">
 
-        <div class="container">
+        @include('partials._page-header', [
+            'title' => 'Perfil da Empresa',
+            'icon' => 'mdi mdi-account',
+            'breadcrumb' => [
+                ['name' => 'Home', 'url' => ''],
+                ['name' => 'Perfil'],
+            ]
+        ])
 
-            <div class="register-form-light">
+        @include('partials._alert')
 
-                <div class="brand-logo">
-                    <img src="{{ asset('assets/img/moe-logo.png') }}">
-                </div>
+        <form class="onsubmit-wait" action="{{ companyUrl('perfil') }}" method="POST" data-parsley-validate>
 
-                <h4>Bem Vindo(a)!</h4>
-                <h6 class="font-weight-light pb-3">Preencha os campos abaixo para realizar seu cadastro.</h6>
+            @method("PUT")
+            @csrf
 
-                @include('partials._alert')
+            <div class="card main-card">
 
-                <form class="onsubmit-wait" action="{{ dynUrl('cadastrar') }}" data-parsley-validate method="POST">
+                <div class="card-body">
 
-                    @method('POST')
-                    @csrf
+                    <h4 class="card-title">Informações</h4>
+                    <p class="card-description">Dados da Empresa</p>
 
                     <div class="row">
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label>Nome Fantasia <span class="required">*</span></label>
-                                <input type="text" class="form-control form-control-lg" value="{{ old('fantasy_name') }}" name="fantasy_name" placeholder="Nome Fantasia da Empresa" maxlength="100" required>
+                                <input type="text" class="form-control form-control-lg" value="{{ old('fantasy_name', $company->fantasy_name) }}" name="fantasy_name" placeholder="Nome Fantasia da Empresa" maxlength="100" required>
                             </div>
                         </div>
 
                         <div class="col-12 col-md-6">
                             <div class="form-group">
                                 <label>Razão Social <span class="required">*</span></label>
-                                <input type="text" class="form-control form-control-lg" value="{{ old('social_reason') }}" name="social_reason" placeholder="Razão Social da Empresa" maxlength="100" required>
+                                <input type="text" class="form-control form-control-lg" value="{{ old('social_reason', $company->social_reason) }}" name="social_reason" placeholder="Razão Social da Empresa" maxlength="100" required>
                             </div>
                         </div>
 
@@ -45,7 +50,7 @@
                         <div class="col-12 col-md-4">
                             <div class="form-group">
                                 <label>CNPJ <span class="required">*</span></label>
-                                <input type="text" class="form-control form-control-lg" value="{{ old('cnpj') }}" name="cnpj" placeholder="CNPJ da Empresa" sys-mask="cnpj" data-parsley-cnpj maxlength="18" required>
+                                <input type="text" class="form-control form-control-lg" value="{{ $company->cnpj }}" disabled>
                             </div>
                         </div>
 
@@ -57,7 +62,7 @@
                                 <select class="form-control form-select state-select select2" name="state_id" required data-parsley-errors-container="#state_id-errors">
                                     <option value="">Selecione</option>
                                     @foreach ($states as $state)
-                                        <option value="{{ $state->id }}" {{ old('state_id') == $state->id ? 'selected' : '' }}>{{ $state->name }}</option>
+                                        <option value="{{ $state->id }}" {{ old('state_id', $company->state_id) == $state->id ? 'selected' : '' }}>{{ $state->name }}</option>
                                     @endforeach
                                 </select>
                                 <div id="state_id-errors"></div>
@@ -71,7 +76,7 @@
                             <div class="form-group">
 
                                 <label>Cidade <span class="required">*</span></label>
-                                <select class="form-control form-select city-select select2" name="city_id" required data-parsley-errors-container="#city_id-errors" data-id="{{ old('city_id') }}">
+                                <select class="form-control form-select city-select select2" name="city_id" required data-parsley-errors-container="#city_id-errors" data-id="{{ old('city_id', $company->city_id) }}">
                                     <option value="">Selecione um estado</option>
                                 </select>
                                 <div id="city_id-errors"></div>
@@ -85,18 +90,22 @@
                     <div class="form-group">
 
                         <label>Informações Adidionais</label>
-                        <textarea class="form-control" name="additional_info" rows="3" maxlength="500" placeholder="Escreva aqui quaisquer informações adicionais pertinentes">{{ old('additional_info') }}</textarea>
+                        <textarea class="form-control" name="additional_info" rows="3" maxlength="500" placeholder="Escreva aqui quaisquer informações adicionais pertinentes">{{ old('additional_info', $company->additional_info) }}</textarea>
 
                     </div>
 
                     <div class="row">
 
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-8">
                             <div class="form-group">
                                 <label>Email <span class="required">*</span></label>
-                                <input type="email" class="form-control form-control-lg" value="{{ old('email') }}" name="email" placeholder="Email da Empresa" maxlength="100" required>
+                                <input type="email" class="form-control form-control-lg" value="{{ old('email', $company->email) }}" name="email" placeholder="Email da Empresa" maxlength="100" required>
                             </div>
                         </div>
+
+                    </div>
+
+                    <div class="row">
 
                         <div class="col-12 col-md-4">
                             <div class="form-group">
@@ -122,16 +131,23 @@
 
                     </div>
 
-                    <div class="register-btns">
-                        <a href="{{ dynUrl('login') }}" class="btn btn-light ms-auto" type="submit">VOLTAR</a>
-                        <button class="btn btn-gradient-primary" type="submit">CADASTRAR</button>
-                    </div>
-
-                </form>
+                </div>
 
             </div>
 
-        </div>
+            <div class="page-buttons btn-row">
+
+                <a href="{{ companyUrl('/') }}" type="button" class="btn btn-light" title="Voltar">
+                    <i class="mdi mdi-arrow-left"></i> Voltar
+                </a>
+
+                <button type="submit" class="btn btn-gradient-primary" title="Salvar">
+                    <i class="mdi mdi-content-save"></i> Salvar
+                </button>
+
+            </div>
+
+        </form>
 
     </div>
 

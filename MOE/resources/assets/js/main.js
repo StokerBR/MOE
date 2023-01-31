@@ -40,7 +40,7 @@ $(function() {
 
                 var dialog = $dialog.confirm(question, function() {
                     $body.append($form); $form.trigger('submit');
-                });
+                }, true);
 
                 dialog.$modal.on('hidden.bs.modal', function() {
                     modalDeletedOpened = false;

@@ -39,6 +39,7 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
+                                <th>Empresa</th>
                                 <th>Título</th>
                                 <th>Integralização</th>
                                 <th>Modelo de Trabalho</th>
@@ -61,6 +62,7 @@
 
                                 <tr>
                                     <td>{{ $internship->id }}</td>
+                                    <td>{{ $internship->company_name }}</td>
                                     <td>{{ $internship->title }}</td>
                                     <td>{{ $internship->completion }}%</td>
                                     <td>{{ $internship->work_model == 'p' ? 'Presencial' : 'Remoto' }}</td>

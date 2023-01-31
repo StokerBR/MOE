@@ -31,6 +31,13 @@
 
                 <div class="form-group">
 
+                    <label>Empresa</label>
+                    <input type="text" class="form-control" name="company" value="{{ $internship->company->fantasy_name }}" disabled>
+
+                </div>
+
+                <div class="form-group">
+
                     <label>Título</label>
                     <input type="text" class="form-control" name="title" value="{{ $internship->title }}" disabled>
 
@@ -63,11 +70,15 @@
 
                         <div class="form-group">
 
+                            @php
+                                $workModels = [
+                                    'p' => 'Presencial',
+                                    'r' => 'Remoto'
+                                ];
+                            @endphp
+
                             <label>Modelo de Trabalho</label>
-                            <select class="form-control form-select" name="work_model" disabled>
-                                <option value="p" {{ $internship->work_model == 'p' ? 'selected' : '' }}>Presencial</option>
-                                <option value="r" {{ $internship->work_model == 'r' ? 'selected' : '' }}>Remoto</option>
-                            </select>
+                            <input type="text" class="form-control" name="work_model" value="{{ $workModels[$internship->work_model] }}" disabled>
 
                         </div>
 
@@ -83,7 +94,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">R$</span>
                                 </div>
-                                <input type="number" class="form-control" name="remuneration" value="{{ $internship->remuneration }}" disabled>
+                                <input type="text" class="form-control" name="remuneration" value="{{ $internship->remuneration ?? '-' }}" disabled>
                             </div>
 
                         </div>
@@ -96,7 +107,7 @@
 
                             <label>Integralização</label>
                             <div class="input-group">
-                                <input type="number" class="form-control" name="completion" value="{{ $internship->completion }}" disabled>
+                                <input type="text" class="form-control" name="completion" value="{{ $internship->completion ?? '-' }}" disabled>
                                 <div class="input-group-append">
                                     <span class="input-group-text">%</span>
                                 </div>
@@ -114,12 +125,16 @@
 
                         <div class="form-group">
 
+                            @php
+                                $shifts = [
+                                    'm' => 'Matutino',
+                                    'v' => 'Vespertino',
+                                    'i' => 'Integral',
+                                ];
+                            @endphp
+
                             <label>Turno</label>
-                            <select class="form-control form-select" name="shift" disabled>
-                                <option value="m" {{ $internship->shift == 'm' ? 'selected' : '' }}>Matutino</option>
-                                <option value="v" {{ $internship->shift == 'v' ? 'selected' : '' }}>Vespertino</option>
-                                <option value="i" {{ $internship->shift == 'i' ? 'selected' : '' }}>Integral</option>
-                            </select>
+                            <input type="text" class="form-control" name="shift" value="{{ $shifts[$internship->shift] }}" disabled>
 
                         </div>
 
@@ -135,9 +150,7 @@
                         <div class="form-group">
 
                             <label>Estado</label>
-                            <select class="form-control form-select" name="state_id" disabled>
-                                <option value="{{ $state->id }}" selected>{{ $state->name }}</option>
-                            </select>
+                            <input type="text" class="form-control" name="state" value="{{ $state->name }}" disabled>
 
                         </div>
 
@@ -148,45 +161,13 @@
                         <div class="form-group">
 
                             <label>Cidade</label>
-                            <select class="form-control form-select" name="city_id" disabled>
-                                <option value="{{ $city->id }}" selected>{{ $city->name }}</option>
-                            </select>
+                            <input type="text" class="form-control" name="city" value="{{ $city->name }}" disabled>
 
                         </div>
 
                     </div>
 
                 </div>
-
-                @php
-                    $internshipCourses = $internship->courses;
-                @endphp
-
-                <h4 class="card-title">Status Atual</h4>
-                <p class="card-description mb-2">Status atual da aprovação da vaga para o seu curso:</p>
-
-                @php
-                    $status = [
-                        'tag' => '',
-                        'text' => ''
-                    ];
-
-                    if ($approved === null) {
-                        $status['tag'] = 'pending';
-                        $status['text'] = 'Pendente';
-
-                    } else if ($approved === false) {
-                        $status['tag'] = 'rejected';
-                        $status['text'] = 'Rejeitada';
-
-                    } else {
-                        $status['tag'] = 'approved';
-                        $status['text'] = 'Aprovada';
-                    }
-
-                @endphp
-
-                <span class="internship-status-tag {{ $status['tag'] }} big">{{ $status['text'] }}</span>
 
             </div>
 
