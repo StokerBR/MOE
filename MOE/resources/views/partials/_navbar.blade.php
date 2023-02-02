@@ -43,7 +43,7 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                    <a class="dropdown-item" href="#{{-- {{ dynUrl('perfil') }} --}}">
+                    <a class="dropdown-item" href="{{ dynUrl('perfil') }}">
                         <i class="mdi mdi-account me-2 text-success"></i>
                         Perfil
                     </a>

@@ -29,6 +29,7 @@ Route::group(['middleware' => ['auth:company']], function() {
 
     // Perfil
     Route::get('perfil', [CompanyController::class, 'profile']);
+    Route::put('perfil', [CompanyController::class, 'updateProfile']);
 
     // Vagas
     Route::group(['prefix' => 'vagas'], function() {

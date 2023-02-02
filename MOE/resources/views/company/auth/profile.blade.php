@@ -105,13 +105,18 @@
 
                     </div>
 
-                    <div class="row">
+                    <div class="form-check">
+                        <label class="form-check-label text-muted">
+                        <input type="checkbox" name="change_password" class="form-check-input change-password-checkbox" {{ old('change_password') ? 'checked' : '' }}>Alterar Senha</label>
+                    </div>
+
+                    <div class="row password-fields d-none">
 
                         <div class="col-12 col-md-4">
                             <div class="form-group">
                                 <label>Senha <span class="required">*</span></label>
                                 <div class="input-with-icon password-icon">
-                                    <input type="password" id="password" class="form-control form-control-lg" name="password" placeholder="Senha" minlength="6" maxlength="60" required data-parsley-errors-container="#password-error">
+                                    <input type="password" id="password" class="form-control form-control-lg" name="password" placeholder="Senha" minlength="6" maxlength="60" data-parsley-errors-container="#password-error">
                                     <i class="mdi mdi-eye"></i>
                                 </div>
                                 <div id="password-error"></div>
@@ -122,7 +127,7 @@
                             <div class="form-group">
                                 <label>Confirmação da Senha <span class="required">*</span></label>
                                 <div class="input-with-icon password-icon">
-                                    <input type="password" class="form-control form-control-lg" name="password_confirmation" placeholder="Confirme a Senha" minlength="6" maxlength="60" required data-parsley-equalto="#password" data-parsley-errors-container="#password_confirmation-error">
+                                    <input type="password" class="form-control form-control-lg" name="password_confirmation" placeholder="Confirme a Senha" minlength="6" maxlength="60" data-parsley-equalto="#password" data-parsley-errors-container="#password_confirmation-error">
                                     <i class="mdi mdi-eye"></i>
                                 </div>
                                 <div id="password_confirmation-error"></div>

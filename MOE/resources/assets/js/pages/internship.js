@@ -2,8 +2,8 @@ $(function() {
 
     $('.page.page-internships.page-create-edit').each(function() {
 
-        let $self = $(this);
-        let $courseSelect = $self.find('.course-select');
+        let $page = $(this);
+        let $courseSelect = $page.find('.course-select');
 
         $courseSelect.select2({
             language: "pt-BR",
