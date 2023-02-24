@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => ['guest']], function() {
 
-// Login
+    // Login
     Route::get  ('login', [LoginController::class, 'index'])->name('admin.login');
     Route::post ('login', [LoginController::class, 'login']);
 

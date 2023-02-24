@@ -246,6 +246,12 @@ class InternshipController extends Controller {
 
     }
 
+    /**
+     * Deleta a vaga de estágio
+     *
+     * @param Request $request
+     * @return void
+     */
     public function delete(Request $request) {
 
         if ($request->id) {

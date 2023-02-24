@@ -33,7 +33,9 @@
             <div class="auth-form-light text-left p-5">
 
                 <div class="brand-logo">
-                    <img src="{{ asset('assets/img/moe-logo.png') }}">
+                    <a href="{{ url('/') }}">
+                        <img src="{{ asset('assets/img/moe-logo.png') }}">
+                    </a>
                 </div>
 
                 <h4>Bem Vindo(a)!</h4>

@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('teste', [HomeController::class, 'teste']);
-
 Route::get('/', [HomeController::class, 'chooseAccount'])->name('choose-account');
 
 Route::get('estados/{stateId}/cidades', [HomeController::class, 'getCities']);

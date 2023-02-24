@@ -9,10 +9,6 @@ use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller {
 
-    public function teste() {
-        return view('welcome');
-    }
-
     /**
      * Exibe a página para escolha do tipo de usuário
      *
